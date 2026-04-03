@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('/assets/images/image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.logotipo {
+  display: grid;
+  justify-content: left;
+  width: 1500px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 3.5px;
+}
+
+.coluna-acesso {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-radius: 30px;
+  gap: 70px;
+  height: 450px;
+  width: 1050px;
+  padding: 30px;
+  background: rgb(88, 130, 193, 0.64);
+  text-align: center;
+  font-family: 'Volkhov', serif;
+  font-size: 22px;
+  align-self: start;
+}
+
+.container {
+  max-width: 1400px;
+  display: grid;
+  justify-content: center;
+  margin: 100px auto 0px auto;
+}
+
+.icons {
+  display: grid;
+  gap: 22px;
+}
+
+.um {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: white;
+  width: 450px;
+  height: 20px;
+  border-radius: 12px;
+}
+
+.um img {
+  text-align: left;
+  margin-left: 20px;
+  width: 28.5px;
+  height: 28.5px;
+}
+.bemvindo {
+  font-family: 'Volkhov', serif;
+  text-align: center;
+  color: white;
+  font-size: 34px;
+}
+
+.botao-acesso {
+  width: 375px;
+  height: 43px;
+  background-color: #f72585;
+  color: white;
+  border-radius: 20px;
+  border-color: #f72585;
+  font-family: 'Volkhov', serif;
+  font-size: 15px;
+}
+
+.botao {
+  justify-self: center;
+}
+
+.entrar-com {
+  text-align: left;
+  margin-left: 40px;
+  font-family: 'Inter', sans-serif;
+}

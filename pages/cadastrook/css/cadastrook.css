@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('/assets/images/image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  font-family: 'Volkhov', serif;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.logotipobr {
+  display: grid;
+  justify-content: left;
+  width: 1500px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 3.5px;
+  display: grid;
+}
+
+.cadastrook {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-radius: 30px;
+  gap: 70px;
+  height: 450px;
+  width: 1050px;
+  padding: 30px;
+  background: rgb(88, 130, 193, 0.64);
+  text-align: center;
+  font-family: 'Volkhov', serif;
+  font-size: 22px;
+  align-self: start;
+}
+
+h1 {
+  width: 801px;
+  height: 58px;
+  color: white;
+  font-size: 38px;
+}
+
+.segunda {
+  width: 783px;
+  height: 58px;
+  color: white;
+  font-size: 35px;
+}
+
+.botaologin {
+  width: 375px;
+  height: 43px;
+  background-color: #f72585;
+  color: white;
+  border-radius: 20px;
+  border-color: #f72585;
+  justify-self: center;
+  font-family: 'Volkhov', serif;
+  font-size: 15px;
+}

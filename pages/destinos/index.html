@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Destino</title>
+  </head>
+  <body>
+    <header class="cabeca">
+      <div class="conteiner">
+        <nav class="nav">
+          <img class="logo" src="/assets/images/Logo.png" alt="Travel" />
+
+          <div class="nav-direita">
+            <img
+              src="/assets/images/Ellipse 19.png"
+              alt="Perfil"
+              class="perfil"
+            />
+            <a href="#">Minhas viagens</a>
+          </div>
+        </nav>
+
+        <section class="pesquisa">
+          <form class="pesquisa-form">
+            <div class="campo">
+              <label
+                >Destino
+                <img
+                  src="/assets/images/arrow_drop_down_24dp_F72585_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Seta"
+              /></label>
+              <input type="text" placeholder="Para onde quer ir?" />
+            </div>
+
+            <div class="campo">
+              <label
+                >Datas
+                <img
+                  src="/assets/images/arrow_drop_down_24dp_F72585_FILL0_wght400_GRAD0_opsz24.png"
+              /></label>
+              <input type="date" placeholder="Quando quer ir?" />
+            </div>
+
+            <button type="button">Buscar</button>
+          </form>
+        </section>
+      </div>
+    </header>
+
+    <section class="destinos">
+      <h1>Descubra as melhores ofertas</h1>
+
+      <div class="grid">
+        <article
+          class="card"
+          data-titulo="Gramado"
+          data-local="Rio Grande do Sul"
+          data-descricao="Gramado, na Serra Gaúcha, é o destino perfeito para quem busca charme, clima aconchegante e experiências inesquecíveis. Com arquitetura inspirada na Europa, ótima gastronomia e atrações para todos os estilos, a cidade combina beleza e conforto na medida certa para transformar qualquer viagem em algo especial."
+        >
+          <img src="/assets/images/gramado.jpg" alt="gramado" />
+          <div class="info">
+            <div class="textos">
+              <h3>Gramado</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Rio Grande do Sul</p>
+            </div>
+            <span class="preco">R$ 2.766</span>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-titulo="Florianópolis"
+          data-local="Santa Catarina"
+          data-descricao="Florianópolis combina praias deslumbrantes, natureza preservada e uma atmosfera leve que faz qualquer um esquecer da vida corrida. Com opções que vão de cenários tranquilos a pontos badalados, a cidade entrega o equilíbrio perfeito entre descanso, aventura e boa gastronomia."
+        >
+          <img src="/assets/images/florianópolis.jpg" alt="florianópolis" />
+          <div class="info">
+            <div class="textos">
+              <h3>Florianópolis</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Santa Catarina</p>
+            </div>
+            <span class="preco">R$ 3.500</span>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-titulo="Foz do Iguaçu"
+          data-local="Paraná"
+          data-descricao="Foz do Iguaçu é o tipo de lugar que faz qualquer outro destino parecer tímido. Lar das impressionantes Cataratas do Iguaçu, a cidade combina natureza grandiosa, experiências únicas e um encontro cultural entre três países, criando uma viagem intensa, marcante e difícil de superar."
+        >
+          <img src="/assets/images/foz-do-iguaçu.jpg" alt="Foz do Iguaçu" />
+          <div class="info">
+            <div class="textos">
+              <h3>Foz do Iguaçu</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Paraná</p>
+            </div>
+            <span class="preco">R$ 3.000</span>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-titulo="Rio de Janeiro"
+          data-local="Rio de Janeiro"
+          data-descricao="O Rio de Janeiro entrega um pacote que muita cidade promete e quase nenhuma cumpre: paisagens icônicas como o Cristo Redentor e o Pão de Açúcar, praias famosas e uma energia que mistura natureza e vida urbana sem esforço. É o tipo de destino que funciona tanto para relaxar quanto para viver experiências marcantes, sem precisar escolher muito."
+        >
+          <img src="/assets/images/rio-de-janeiro.jpg" alt="Rio de Janeiro" />
+          <div class="info">
+            <div class="textos">
+              <h3>Rio de Janeiro</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Rio de Janeiro</p>
+            </div>
+            <span class="preco">R$ 2.500</span>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-titulo="São Paulo"
+          data-local="São Paulo"
+          data-descricao="São Paulo é o destino para quem quer variedade sem paciência para monotonia. A cidade reúne gastronomia de alto nível, cultura intensa e pontos icônicos como a Avenida Paulista, oferecendo experiências que vão do sofisticado ao alternativo em poucos quarteirões. É movimento, diversidade e oportunidade o tempo todo, do jeito que uma metrópole de verdade deveria ser."
+        >
+          <img src="/assets/images/são-Paulo.jpg" alt="São paulo" />
+          <div class="info">
+            <div class="textos">
+              <h3>São Paulo</h3>
+              <p><i class="fa-solid fa-location-dot"></i> São Paulo</p>
+            </div>
+            <span class="preco">R$ 1.500</span>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-titulo="Campos do Jordão"
+          data-local="São Paulo"
+          data-descricao="Campos do Jordão é o refúgio perfeito para quem quer um clima de montanha com um toque europeu sem sair do Brasil. Com arquitetura charmosa, clima frio e lugares como o Capivari, a cidade oferece experiências aconchegantes, boa gastronomia e aquele ar de tranquilidade que faz qualquer viagem parecer mais especial do que realmente deveria ser."
+        >
+          <img src="/assets/images/gramado.jpg" alt="Gramado" />
+          <div class="info">
+            <div class="textos">
+              <h3>Gramado</h3>
+              <p><i class="fa-solid fa-location-dot"></i> São Paulo</p>
+            </div>
+            <span class="preco">R$ 2.000</span>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-titulo="Salvador"
+          data-local="Bahia"
+          data-descricao="Salvador mistura história, cultura e energia de um jeito que pouca cidade consegue sustentar sem parecer exagero. Com cenários como o Pelourinho, praias marcantes e uma gastronomia cheia de identidade, é um destino vibrante que transforma qualquer viagem em uma experiência intensa e memorável."
+        >
+          <img src="/assets/images/salvador.jpg" alt="Salvador" />
+          <div class="info">
+            <div class="textos">
+              <h3>Salvador</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Bahia</p>
+            </div>
+            <span class="preco">R$ 2.200</span>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-titulo="Maceió"
+          data-local="Alagoas"
+          data-descricao="Maceió é o tipo de destino que faz o Caribe parecer um pouco menos exclusivo. Com águas cristalinas, piscinas naturais e cenários como a Praia de Pajuçara, a cidade combina tranquilidade, beleza e uma vibe leve que transforma qualquer viagem em puro descanso com paisagens de cartão-postal."
+        >
+          <img src="/assets/images/maceió.jpg" alt="maceió" />
+          <div class="info">
+            <div class="textos">
+              <h3>Maceió</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Alagoas</p>
+            </div>
+            <span class="preco">R$ 2.000</span>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-titulo="Jericoacoara"
+          data-local="Ceará"
+          data-descricao="Jericoacoara é o tipo de lugar que parece inventado por alguém cansado da vida urbana. Entre dunas, lagoas cristalinas e cenários como a Pedra Furada, o destino entrega simplicidade com beleza absurda, perfeito para quem quer desacelerar sem abrir mão de experiências memoráveis."
+        >
+          <img src="/assets/images/jericoacoara.jpg" alt="Jericoacoara" />
+          <div class="info">
+            <div class="textos">
+              <h3>Jericoacoara</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Ceará</p>
+            </div>
+            <span class="preco">R$ 5.000</span>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-titulo="Porto de Galinhas"
+          data-local="Pernambuco"
+          data-descricao="Porto de Galinhas é o tipo de destino que entrega exatamente o que você espera e ainda assim consegue surpreender. Com águas cristalinas, piscinas naturais e cenários como a Piscinas Naturais de Porto de Galinhas, é perfeito para quem busca tranquilidade, beleza e aquele clima de férias que realmente funciona."
+        >
+          <img
+            src="/assets/images/porto-de-galinhas.jpg"
+            alt="Porto de Galinhas"
+          />
+          <div class="info">
+            <div class="textos">
+              <h3>Porto de Galinhas</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Pernambuco</p>
+            </div>
+            <span class="preco">R$ 2.700</span>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-titulo="Manaus"
+          data-local="Amazonas"
+          data-descricao="Manaus é onde a natureza decide humilhar qualquer outro destino sem esforço. Porta de entrada da Amazônia, a cidade combina cultura, história e experiências únicas como o Encontro das Águas, criando uma viagem intensa, diferente e impossível de ignorar."
+        >
+          <img src="/assets/images/manaus.jpg" alt="Manaus" />
+          <div class="info">
+            <div class="textos">
+              <h3>Manaus</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Amazonas</p>
+            </div>
+            <span class="preco">R$ 4.000</span>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          data-titulo="Cânions"
+          data-local="Santa Catarina"
+          data-descricao="Os Cânions de Santa Catarina, na região dos Aparados da Serra e da Serra Geral, oferecem paisagens impressionantes com paredões gigantes, trilhas e mirantes de tirar o fôlego. É o destino perfeito para quem busca aventura, contato com a natureza e cenários dramáticos que fazem qualquer viagem parecer muito mais épica do que o normal."
+        >
+          <img src="/assets/images/cânions.jpg" alt="Chapada dos Veadeiros" />
+          <div class="info">
+            <div class="textos">
+              <h3>Cânions</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Santa Catarina</p>
+            </div>
+            <span class="preco">R$ 2.300</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <button class="fechar">✕</button>
+
+        <h2 id="modal-titulo"></h2>
+        <p id="modal-local"></p>
+        <p id="modal-descricao"></p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="conteiner-footer">
+        <div class="logo">
+          <img src="/assets/images/Logo.png" alt="logo" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo nulla
+            quas temporibus corrupti amet iusto velit alias repellat commodi ab?
+            Possimus, cupiditate. Animi, iste dolore perspiciatis at quos
+            tempora fuga.
+          </p>
+
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="informacoes">
+          <div class="coluna">
+            <h3>INSTITUCIONAL</h3>
+            <ul>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Carreiras</a></li>
+              <li><a href="#">Logistica</a></li>
+              <li><a href="#">Privacidade</a></li>
+            </ul>
+          </div>
+
+          <div class="coluna">
+            <h3>CONTATO</h3>
+            <ul>
+              <li><a href="#">Ajuda-FAQ</a></li>
+              <li><a href="#">Imprensa</a></li>
+              <li><a href="#">Afiliados</a></li>
+            </ul>
+          </div>
+
+          <div class="coluna">
+            <h3>AJUDA</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Midias</a></li>
+              <li><a href="#">Chat ao vivo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

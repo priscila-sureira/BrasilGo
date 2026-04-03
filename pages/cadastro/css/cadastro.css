@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('/assets/images/image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.logo {
+  display: grid;
+  justify-content: left;
+  width: 1500px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 3.5px;
+}
+
+.container-cadastro {
+  display: grid;
+  justify-content: center;
+  margin-top: 100px;
+}
+.cadastro {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-radius: 30px;
+  height: 450px;
+  width: 1050px;
+  padding: 30px;
+  background: rgb(88, 130, 193, 0.64);
+  text-align: center;
+}
+
+.bemvindo {
+  font-family: 'Volkhov', serif;
+  color: white;
+  font-size: 48;
+  width: 801px;
+  height: 58px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -2%;
+}
+
+.input-login {
+  color: #000000;
+}
+.input-senha {
+  color: #000000;
+}
+
+.botao {
+  width: 375px;
+  height: 43px;
+  background-color: #f72585;
+  color: white;
+  border-radius: 20px;
+  border-color: #f72585;
+  justify-self: center;
+  font-family: 'Volkhov', serif;
+  font-size: 15px;
+}
+
+.botaodois {
+  width: 375px;
+  height: 43px;
+  background-color: #f72585;
+  color: white;
+  border-radius: 20px;
+  border-color: #f72585;
+  justify-self: center;
+  font-family: 'Volkhov', serif;
+  font-size: 15px;
+}
+
+.botoes {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+  margin-top: 115px;
+}
+
+.form {
+  display: grid;
+  text-align: left;
+  justify-items: center;
+}
+
+.input-login {
+  font-size: 20px;
+  transform: translateY(60px);
+}
+
+.label {
+  display: grid;
+  margin-left: 12px;
+}
+
+.input-login > input {
+  width: 500px;
+  height: 45px;
+  border-radius: 15px;
+  margin: 7px;
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.background {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(/assets/images/image-7.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.conteiner-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.logo,
+.user {
+  display: flex;
+  height: 50px;
+  width: 50px;
+}
+
+.titulo {
+  font-size: 40px;
+  margin-left: 190px;
+  color: white;
+}
+
+.titulo-container {
+  background-color: #f75aa2;
+  padding: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.titulo-page {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.container-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1400px;
+  margin: 100px auto;
+  gap: 40px;
+}
+
+.sessão-lateral {
+  width: 400px;
+  background-color: white;
+  padding: 14px 0px;
+  border-radius: 20px;
+  border: 5px solid black;
+}
+
+.titulo-sessãolateral,
+.conteudo-section,
+.fotter-section {
+  padding: 10px;
+  font-size: 28px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.titulo-sessãolateral {
+  padding: 10px 20px 10px 20px;
+  border-bottom: 5px solid black;
+}
+
+.conteudo-section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 20px;
+  gap: 50px;
+  border-bottom: 5px solid black;
+}
+
+.proximas-viagens {
+  padding: 10px;
+  background-color: #d9d9d9;
+  margin-bottom: 7px;
+}
+
+.texto-do-lado {
+  color: #000;
+  font-size: 36px;
+  font-weight: 500;
+  padding-top: 50px;
+  justify-self: left;
+}
+
+.viagens-passadas {
+  padding: 10px;
+  background-color: #d9d9d9;
+  margin-bottom: 7px;
+}
+
+.viagens-canceladas {
+  padding: 10px;
+  background-color: #d9d9d9;
+  margin-bottom: 7px;
+}
+
+.fotter-section {
+  padding: 8px 20px;
+  background-color: #d9d9d9;
+  margin: 20px;
+}

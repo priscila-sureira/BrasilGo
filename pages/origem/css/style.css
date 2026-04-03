@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('/assets/images/image-7.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.background {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.header {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.steps {
+  margin-top: 50px;
+}
+
+.card {
+  width: 680px;
+  padding: 30px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.steps {
+  position: absolute;
+  top: 50px;
+  left: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+
+  font-size: 18px;
+}
+
+.steps .active {
+  color: #f72585;
+  font-weight: bold;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+button:last-child {
+  background: #f72585;
+  color: white;
+}
+
+.trip-options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+.option {
+  padding: 20px 40px;
+  border-radius: 12px;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+}
+
+.option.active {
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.continue {
+  margin-top: 30px;
+  padding: 15px 50px;
+  border-radius: 30px;
+  border: none;
+  background: #f72585;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header {
+  top: 10px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 60px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.user span {
+  background: #f72585;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  display: flex;
+  gap: 40px;
+}
+
+.lista span::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  top: -5px;
+  left: -11px;
+  z-index: -1;
+}
+
+.lista span {
+  margin-right: 10px;
+  position: relative;
+}
