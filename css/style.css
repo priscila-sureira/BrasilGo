@@ -60,26 +60,26 @@ body{
   display: flex;
   align-items: center;
   gap: 8px;
-
   border: 2px solid #ff2d8d;
   background: transparent;
   color: #ff2d8d;
-
   padding: 8px 16px;
   border-radius: 25px;
-
   font-size: 14px;
   font-weight: 600;
-
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
-
+.btn-login-header:hover {
+    background-color: #ff2d8d;
+    color: white;
+}
 
 .btn-login {
-  display: flex;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
     border:2px solid #ff2d8d;
     padding:4px 14px;
     border-radius:20px;
@@ -88,7 +88,6 @@ body{
     cursor:pointer;
     gap: 6px;
 }
-
 
 .profile img{
     width: 32px;
@@ -209,24 +208,19 @@ body{
 }
 
 
-
 .btn-primary{
     display: inline-flex;
     align-items: center;
     background:#ff2d8d;
-gap: 10px;
-
+    gap: 10px;
     border:none;
     padding:12px 28px;
     color:white;
-font-size: 16px;
-font-weight: 600;
-
+    font-size: 16px;
+    font-weight: 600;
     border-radius:25px;
     cursor:pointer;
 }
-
-
 
 .search-box {
     position: absolute;
@@ -855,4 +849,11 @@ scroll-behavior: smooth;
   }
 
 }
+
+.menu a{
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.5s ease;
+} 
+
 
