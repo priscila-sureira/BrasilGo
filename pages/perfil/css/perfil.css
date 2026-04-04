@@ -45,12 +45,12 @@
 }
 
 .back {
-  background-color: #f72585;
+  background-color: #ff4da6;
 }
 
 .Perfil-Usuario {
   display: flex;
-  background-color: #f72585;
+  background-color: #ff4da6;
   align-items: center;
   padding: 20px;
   height: 103px;
@@ -138,6 +138,11 @@ input {
   margin-top: 20px;
   padding: 12px 32px;
   border-radius: 20px;
-  background-color: #f72585;
+  background-color: #ff4da6;
   color: #ffffff;
+}
+
+.minhas-viagens a:hover {
+    background-color: #ff4da6;
+    color: white;
 }
