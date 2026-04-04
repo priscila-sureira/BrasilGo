@@ -120,3 +120,17 @@
   background-color: #d9d9d9;
   margin: 20px;
 }
+
+.conteudo-section li,
+.fotter-section {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.conteudo-section li:hover,
+.fotter-section:hover {
+  transform: scale(1.1);
+  background-color: #ff4da6; 
+  color: white;
+  border-radius: 5px;
+}
