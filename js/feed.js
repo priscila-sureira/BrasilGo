@@ -41,5 +41,3 @@ document.querySelector('.prev').onclick = () => {
   container.scrollBy({ left: -300, behavior: 'smooth' });
 };
 
-
-
