@@ -130,7 +130,7 @@
 .conteudo-section li:hover,
 .fotter-section:hover {
   transform: scale(1.1);
-  background-color: #ff4da6; 
+  background-color: #3A0CA3; 
   color: white;
   border-radius: 5px;
 }
