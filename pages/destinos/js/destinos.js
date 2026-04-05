@@ -13,3 +13,4 @@ document.querySelectorAll('.card').forEach(card => {
 document.querySelector('.fechar').addEventListener('click', () => {
   modal.classList.add('hidden');
 });
+
