@@ -128,9 +128,22 @@ input {
 }
 
 .user span {
-  background: #f72585;
-  color: white;
-  padding: 5px 12px;
-  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid #ff2d8d;
+  background: transparent;
+  color: #ff2d8d;
+  padding: 8px 16px;
+  border-radius: 25px;
   font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
+
+.user :hover {
+    background-color: #ff2d8d;
+    color: white;
+}
+
