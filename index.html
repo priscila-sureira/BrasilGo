@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <title>Brasil GO</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
    <script src="./js/feed.js"></script>
-
 
   <!--cabeçalho-->
 <header class="navbar">
@@ -96,28 +96,28 @@
 
 <section class="features">
 
-  <div class="container">
+  <div class="container" data-aos="fade-up">
   <h2>Por que escolher a Brasil GO?</h2>
-    <div class="feature-desc">
+    <div class="feature-desc" data-aos="fade-up">
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Ta Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
 </p>
     </div>
 
 
 <div class="feature-container">
-<div class="feature">
+<div class="feature" data-aos="fade-up">
   <img src="./assets/icon/DESTINOS.svg" alt="">
 <h3>Múltiplos destinos</h3>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nihil iusto culpa autem! Reiciendis, incidunt quas saepe id, neque provident eligendi veritatis minima magni facere minus illo assumenda doloremque sapiente.</p>
 </div   >
 
-<div class="feature">
+<div class="feature" data-aos="fade-up">
   <img src="./assets/icon/CLIENTES.svg" alt="">
 <h3>+ de 5.000 clientes</h3>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti non enim necessitatibus quaerat, nobis voluptatibus fugiat atque alias. Doloremque sapiente reiciendis minus aspernatur delectus reprehenderit ipsa laboriosam iste deleniti harum.</p>
 </div>
 
-<div class="feature">
+<div class="feature" data-aos="fade-up">
   <img src="./assets/icon/CERTIFICADA.svg" alt="">
 <h3>Certificada</h3>
 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi animi nemo laboriosam natus in totam atque culpa unde distinctio explicabo, eaque sapiente ducimus tempore sed consequatur. Nobis dolorem veniam quis!</p>
@@ -127,7 +127,7 @@
 </section>
 
 <section class="destinos">
-<div class="container">
+<div class="container" data-aos="fade-up">
 <h2>Destinos Nacionais</h2>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
 
@@ -264,14 +264,14 @@
 
   <div class="container">
 <!-- Depoimentos -->
-<div class="depoimentos"> 
+<div class="depoimentos" data-aos="fade-right"> 
     <h1>Recomendados por mais de 5.000 clientes!</h1>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
 </div>
 <!-- Avaliação -->
     <div class="avaliacao">
-      <div class="review-card">
+      <div class="review-card" data-aos="fade-left">
         <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate."</p>
         <span>- João Silva</span>
     </div>
@@ -280,7 +280,7 @@
 </section>
 
 <div class="newsletter">
-  <div class="container">
+  <div class="container" data-aos="fade-up-right">
  <img src="./assets/icon/AVIÃO.svg" class="aviao" alt="avião">
 
 <h2>Assine e receba promoções incríveis!</h2>
@@ -288,7 +288,7 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia porro dolore, voluptates earum at hic assumenda architecto, facilis atque nam enim non repellendus provident doloribus magni, esse ipsa! Expedita.</p>
 
 <form>
-  <div class="newsletter-form">
+  <div class="newsletter-form" data-aos="fade-up-left">
 <input type="email" placeholder="Seu email">
 <button>Assinar</button>
 </form>
@@ -299,7 +299,7 @@
 
 <!-- Rodapé -->
 <footer>
-<div class="container">
+<div class="container" >
     <!-- Sobre a empresa -->
     <section class="footer-links">
       
@@ -311,7 +311,7 @@
         Aliquet malesuada tellus viverra ultrices egestas sociis gravida sem.
       </p>
 
-      <div class="social">
+      <div class="social" data-aos="fade-up">
 
         <a href="https://facebook.com" target="_blank" aria-label="Facebook">
     <i class="fa-brands fa-facebook-f"></i>
@@ -366,7 +366,10 @@
 <p class="footer-bottom">© 2026 Brasil GO - Todos os direitos reservados</p>
    </div><!--conatainer--> 
 </footer>
-<script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
