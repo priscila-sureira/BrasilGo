@@ -40,7 +40,7 @@ body {
   max-width: 1400px;
   display: grid;
   justify-content: center;
-  margin: 100px auto 0px auto;
+  margin: 0px auto 0px auto;
 }
 
 .icons {
