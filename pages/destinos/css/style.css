@@ -31,7 +31,8 @@ body {
 }
 
 .logo img {
-  width: 900px;
+  max-width: 100%;
+  height: auto;
 }
 
 .nav-direita {
@@ -137,6 +138,22 @@ button {
 
 .card h3 {
   margin: 10px 0 5px;
+}
+
+.lado-direito {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.avaliacao {
+  font-size: 12px;
+  color: #666;
+}
+
+.avaliacao i {
+  color: gold;
 }
 
 .preco {
@@ -268,3 +285,76 @@ footer {
   color: black;
 }
 
+
+@media (max-width: 1200px) {
+
+  .grid {
+    grid-template-columns: (auto auto);
+  }
+
+  .logo img {
+    max-width: 250px;
+  }
+
+  .cabeca {
+    padding: 60px 20px;
+  }
+
+  .conteiner-footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+  
+
+  /* NAV */
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .nav-direita {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* SEARCH */
+  .pesquisa-form {
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 15px;
+  }
+
+  /* GRID */
+  .grid {
+    grid-template-columns: auto;
+  }
+
+  /* CARD */
+  .info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .lado-direito {
+    align-items: flex-start;
+  }
+
+  /* IMAGEM */
+  .card img {
+    height: 160px;
+  }
+
+  /* FOOTER */
+  .informacoes {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
