@@ -255,7 +255,6 @@ footer {
   color: black;
 }
 
-/* COLUNAS */
 .informacoes {
   display: flex;
   gap: 40px;
@@ -287,7 +286,6 @@ footer {
 
 
 @media (max-width: 1200px) {
-
   .grid {
     grid-template-columns: (auto auto);
   }
@@ -309,15 +307,15 @@ footer {
 
 
 @media (max-width: 700px) {
-  
-  .nav {
+    .nav {
     flex-direction: column;
     gap: 10px;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .nav-direita {
     width: 100%;
+    display: flex;
     justify-content: space-between;
   }
 

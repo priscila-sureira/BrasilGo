@@ -18,9 +18,10 @@ body {
 }
 
 .header {
-  max-width: 1400px;
-  margin: 0 auto;
+   top: 10px;
+  padding: 0 40px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -65,7 +66,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .steps {
@@ -85,10 +86,46 @@ ul {
   font-weight: bold;
 }
 
-input {
+.input-group {
+  position: relative;
   width: 100%;
-  padding: 10px;
-  margin-top: 15px;
+  max-width: 500px;
+  margin: 25px auto;
+}
+
+.input-group input {
+  width: 100%;
+  height: 55px;
+  padding: 0 50px 0 20px;
+
+  border-radius: 30px;
+  border: none;
+  outline: none;
+
+  font-size: 16px;
+
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  box-shadow: 0 0 0 3px rgba(247, 37, 133, 0.3);
+  margin: 25px auto;
+}
+
+
+.input-group::after {
+  content: "🔍";
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.6;
+  font-size: 18px;
 }
 
 .buttons {
@@ -128,22 +165,24 @@ input {
 }
 
 .user span {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  border: 2px solid #ff2d8d;
-  background: transparent;
-  color: #ff2d8d;
-  padding: 8px 16px;
-  border-radius: 25px;
+  background: #f72585;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
   font-size: 14px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  cursor: pointer;
 }
 
-.user :hover {
-    background-color: #ff2d8d;
-    color: white;
+
+
+.card h2 {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color:#222;
 }
 
+.texto{
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
