@@ -46,7 +46,7 @@ body {
   border-radius: 50%;
 }
 
-.nav a {
+.nav-direita a {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -61,9 +61,9 @@ body {
   cursor: pointer;
 }
 
-.nav a:hover {
-    background-color: #ff2d8d;
-    color: white;
+.nav-direita a:hover {
+  background-color: #ff2d8d;
+  color: white;
 }
 
 .pesquisa {
@@ -284,7 +284,6 @@ footer {
   color: black;
 }
 
-
 @media (max-width: 1200px) {
   .grid {
     grid-template-columns: (auto auto);
@@ -302,12 +301,10 @@ footer {
     flex-direction: column;
     gap: 30px;
   }
-
 }
 
-
 @media (max-width: 700px) {
-    .nav {
+  .nav {
     flex-direction: column;
     gap: 10px;
     align-items: center;
@@ -347,5 +344,4 @@ footer {
     flex-direction: column;
     gap: 20px;
   }
-
 }
