@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Passo 5 - Passageiros</title>
+</head>
+<body>
+    <!-- Cabeçalho com o logo e usuário -->
+    <header class="header">
+        <img src="img/logo.png" alt="logo" class="logo">
+        <a href="minhasviagens.html" style="text-decoration: none; color: inherit;">
+            <div class="user"> 
+                <img src="img/usuario.png" alt="usuario">
+                <span>Minhas viagens</span>
+            </div>
+        </a>
+    </header>
+
+    <!-- Barra de Passos Branca -->
+    <div class="steps-container">
+        <div class="steps">
+            <div class="step">
+                <div class="circle">1</div>
+                <span>Tipo de viagem</span>
+            </div>
+            <div class="line"></div>
+            
+            <div class="step">
+                <div class="circle">2</div>
+                <span>Origem</span>
+            </div>
+            <div class="line"></div>
+            
+            <div class="step">
+                <div class="circle">3</div>
+                <span>Destino</span>
+            </div>
+            <div class="line"></div>
+            
+            <div class="step">
+                <div class="circle">4</div>
+                <span>Datas</span>
+            </div>
+            <div class="line"></div>
+            
+            <!-- Etapa 5 está com a classe 'active' para ficar rosa -->
+            <div class="step active">
+                <div class="circle">5</div>
+                <span>Passageiros</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Área Principal de Conteúdo -->
+    <main class="main-container">
+        <div class="card">
+            <h2 class="card-title">Quantos passageiros?</h2>
+            
+            <!-- Controle de passageiros (+ e -) -->
+            <div class="counter-box">
+                <button class="counter-btn">-</button>
+                <span>1 pessoa (s)</span>
+                <button class="counter-btn">+</button>
+            </div>
+
+            <div class="divider"></div>
+
+            <h3 class="subtitle">Classe de voo</h3>
+            
+            <!-- Botões de escolha de voo -->
+            <div class="options-list">
+                <button class="flight-option">Econômica</button>
+                <button class="flight-option">Executiva</button>
+                <button class="flight-option">Primeira Classe</button>
+            </div>
+
+            <!-- Botões Inferiores -->
+            <div class="footer-buttons">
+                <!-- Botão Voltar retorna para a tela de Datas -->
+                <button class="btn" onclick="window.location.href='datas.html'">Voltar</button>
+                
+                <button class="btn">Buscar voos</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script> 
+</body>
+</html>

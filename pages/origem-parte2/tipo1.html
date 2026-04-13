@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Passo 1 - Tipo de viagem</title>
+</head>
+<body>
+    <header class="header">
+        <img src="img/logo.png" alt="logo" class="logo">
+        <a href="minhasviagens.html" style="text-decoration: none; color: inherit;">
+            <div class="user"> 
+                <img src="img/usuario.png" alt="usuario">
+                <span>Minhas viagens</span>
+            </div>
+        </a>
+    </header>
+
+    <div class="steps-container">
+        <div class="steps">
+            <div class="step active">
+                <div class="circle">1</div>
+                <span>Tipo de viagem</span>
+            </div>
+            <div class="line"></div>
+            
+            <div class="step">
+                <div class="circle">2</div>
+                <span>Origem</span>
+            </div>
+            <div class="line"></div>
+            
+            <div class="step">
+                <div class="circle">3</div>
+                <span>Destino</span>
+            </div>
+            <div class="line"></div>
+            
+            <div class="step">
+                <div class="circle">4</div>
+                <span>Datas</span>
+            </div>
+            <div class="line"></div>
+            
+            <div class="step">
+                <div class="circle">5</div>
+                <span>Passageiros</span>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-container">
+        <div class="card">
+            <h2 class="card-title">Como você quer viajar?</h2>
+            
+            <h3 class="subtitle">Escolha o tipo de viagem</h3>
+            
+            <div class="options-list">
+                <button class="flight-option">Ida e volta</button>
+                <button class="flight-option">Só ida</button>
+            </div>
+
+            <div class="footer-buttons">
+                <!-- Esconder o botão voltar na primeira tela para manter proporção -->
+                <button class="btn" style="visibility: hidden;">Voltar</button>
+                <button class="btn" onclick="window.location.href='origem.html'">Continuar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script> 
+</body>
+</html>

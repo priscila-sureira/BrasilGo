@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("img/fundo.png"); /* Fundo usado pelo aluno */
+    background-color: #a2c8f3; /* Cor de fallback caso a imagem não carregue */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* ================= Cabeçalho ================= */
+.header {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.logo {
+    width: 60px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.user span {
+    background: transparent;
+    border: 1px solid #F72585; /* Contorno rosa para combinar com a imagem */
+    color: #F72585;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ================= Barra de Progresso (Steps) ================= */
+.steps-container {
+    background: white;
+    width: 100%;
+    position: absolute;
+    top: 70px; 
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.circle {
+    width: 35px;
+    height: 35px;
+    background: #FFD6E0; /* Bola rosa claro */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #000;
+}
+
+/* Passo Ativo */
+.step.active .circle {
+    background: #F72585; /* Rosa forte */
+    color: white;
+}
+
+.step.active span {
+    color: #F72585; /* Texto rosa forte */
+}
+
+.line {
+    width: 40px;
+    height: 2px;
+    background: #000; /* Linha preta conectando as etapas */
+}
+
+/* ================= Container Principal ================= */
+.main-container {
+    margin-top: 170px; /* Espaço para o cabeçalho e a barra branca */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Cartão Transparente (Card) */
+.card {
+    width: 750px;
+    padding: 40px;
+    background: rgba(245, 250, 255, 0.85); /* Fundo claro e transparente */
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+/* ================= Tela de Datas (Passo 4) ================= */
+.calendars-wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.calendar-box {
+    width: 45%; 
+}
+
+.calendar-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.calendar {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+}
+
+.month {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #b59f6d; /* Cor marrom/dourada para os meses */
+    margin-bottom: 15px;
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.days-grid .weekday {
+    font-weight: bold;
+    color: #b59f6d;
+    margin-bottom: 5px;
+}
+
+.day-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.disabled {
+    color: #ccc;
+    font-weight: normal;
+}
+
+/* Dia selecionado preenchido */
+.day-number.solid {
+    background: #b59f6d;
+    color: white;
+}
+
+/* Dia selecionado apenas com o contorno */
+.day-number.outlined {
+    border: 2px solid #b59f6d;
+    color: #b59f6d;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+/* Seta cor-de-rosa ao lado dos calendários */
+.pink-arrow {
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 20px solid #F72585; 
+}
+
+
+/* ================= Tela de Passageiros (Passo 5) ================= */
+.counter-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.counter-btn {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background: #000;
+    margin: 20px 0;
+}
+
+.subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.flight-option {
+    background: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.flight-option:hover {
+    background: #f0f0f0;
+}
+
+
+/* ================= Botões Inferiores (Comuns) ================= */
+.footer-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 15px 0;
+    border-radius: 30px;
+    border: none;
+    background: #F72585;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 45%; 
+}
+
+.btn:hover {
+    background: #d81b70;
+}
+
+/* ================= Campos de Texto (Origem e Destino) ================= */
+.input-text {
+    width: 80%;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    outline: none;
+}
+.input-text:focus {
+    box-shadow: 0 0 0 2px #F72585;
+}
