@@ -72,3 +72,83 @@ h1 {
   font-size: 15px;
 }
 
+@media (max-width: 768px) {
+
+  .logotipobr {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logotipobr img {
+    width: 120px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .cadastrook {
+    width: 350px;
+    height: auto;
+    gap: 30px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  h1 {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  .segunda {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .botaologin {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1097px) {
+
+  .logotipo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .container {
+    width: 250;
+    padding: 50px;
+  }
+
+  .coluna-acesso {
+    height: auto;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .bemvindo {
+    font-size: 26px;
+  }
+
+  .um {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    padding: 12px;
+  }
+
+  .entrar-com {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+
+  .botao-acesso {
+    width: 100%;
+    max-width: 375px;
+  }
+
+}
+

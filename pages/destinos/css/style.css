@@ -255,7 +255,6 @@ footer {
   color: black;
 }
 
-/* COLUNAS */
 .informacoes {
   display: flex;
   gap: 40px;
@@ -287,7 +286,6 @@ footer {
 
 
 @media (max-width: 1200px) {
-
   .grid {
     grid-template-columns: (auto auto);
   }
@@ -309,11 +307,7 @@ footer {
 
 
 @media (max-width: 700px) {
-  
- 
-
-  /* NAV */
-  .nav {
+    .nav {
     flex-direction: column;
     gap: 10px;
     align-items: center;
@@ -325,19 +319,16 @@ footer {
     justify-content: space-between;
   }
 
-  /* SEARCH */
   .pesquisa-form {
     flex-direction: column;
     gap: 10px;
     border-radius: 15px;
   }
 
-  /* GRID */
   .grid {
     grid-template-columns: auto;
   }
 
-  /* CARD */
   .info {
     flex-direction: column;
     align-items: flex-start;
@@ -348,12 +339,10 @@ footer {
     align-items: flex-start;
   }
 
-  /* IMAGEM */
   .card img {
     height: 160px;
   }
 
-  /* FOOTER */
   .informacoes {
     flex-direction: column;
     gap: 20px;

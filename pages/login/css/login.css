@@ -147,3 +147,44 @@ body {
 
 }
 
+@media (max-width: 1097px) {
+
+  .logotipo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .coluna-acesso {
+    width: 90%;
+    height: auto;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .bemvindo {
+    font-size: 26px;
+  }
+
+  .um {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    padding: 12px;
+  }
+
+  .entrar-com {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+
+  .botao-acesso {
+    width: 100%;
+    max-width: 375px;
+  }
+
+}
