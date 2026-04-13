@@ -12,7 +12,6 @@
 </head>
 
 <body>
-   <script src="./js/feed.js"></script>
 
   <!--cabeçalho-->
 <header class="navbar">
@@ -20,18 +19,20 @@
 
     <nav class="menu">
         <a href="./index.html">INICIO</a>
-        <a href="./pages/destinos/index.html">DESTINOS</a>
-        <a href="#">CLIENTES</a>
-        <a href="#">CONTATOS</a>
+        <a href="#destinos">DESTINOS</a>
+        <a href="#clientes">CLIENTES</a>
+        <a href="#contatos">CONTATOS</a>
     </nav>
     
 <!-- LINK DE LOGIN -->
  <div class="login-section">
-        <a href="login.html" class="profile">
+        <a href="./pages/perfil/index.html" class="profile">
           <img src="./assets/icon/PROFILE.svg" alt="Ícone de perfil"></a>
-
+<a href="./pages/minhasviagens/index.html" >
     <button class="btn-login-header">Minhas viagens</button>
-    </div>
+</a>
+  </div>
+
     </div>
 </header>
 
@@ -55,7 +56,7 @@
           </select>
           <p>Quando quer ir?</p>
         </div>
-        <a class="btn-login" href="#">
+        <a class="btn-login" href="./pages/destinos/index.html">
           <img src="./assets/icon/LUPA.svg" alt="Ícone de busca">
           BUSCAR
         </a>
@@ -69,16 +70,23 @@
     <img src="./assets/images/Background.svg" alt="Background do" class="hero-image">
 
     <div class="container">
-        <div class="hero-content">
 
+        <div class="hero-content">
+<div class="hero-left">
           <!-- Texto do hero -->
             <div class="hero-text">
         <h1>Descubra o mundo com a Brasil GO!</h1>
-        <p class="hero-subtitle"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores facilis quam sint laudantium amet? Totam eius tempore eos dolorem exercitationem enim asperiores temporibus id magnam dolore odio cupiditate, natus nemo!</p>
+        <p class="hero-subtitle">Descubra o Brasil de uma forma totalmente nova com a Brasil GO. Planeje suas viagens com facilidade, encontre os melhores destinos do país e viva experiências inesquecíveis com conforto, segurança e praticidade em cada etapa da sua jornada. Aqui, viajar deixa de ser complicado e se torna algo leve, acessível e cheio de memórias que você vai guardar para sempre.</p>
 
+         <a href="./pages/cadastro/cadastro.html"
         <button class="btn-primary">
-          <img src="./assets/icon/Explorer.svg" alt="Ícone de explorar">EXPLORAR DESTINOS</button>
+          <img src="./assets/icon/Explorer.svg" alt="Ícone de explorar">EXPLORAR DESTINOS
+        </button>
+        </a>
         </div>
+</div>
+
+          <div class="hero-right">
 
 <div class="hero-images">
 
@@ -89,7 +97,12 @@
 <img src="./assets/images/CATARATAShero.svg" class="img-back img3">
 
     <img src="./assets/images/MUNDO_hero.svg" class="img-main">
+    
   </div>
+   <a href="./pages/cadastro/cadastro.html" class="btn-outline btn-hero">
+  Entrar em Brasil GO
+</a>
+          </div>
     </div>
     </div>
     </section>
@@ -99,8 +112,7 @@
   <div class="container" data-aos="fade-up">
   <h2>Por que escolher a Brasil GO?</h2>
     <div class="feature-desc" data-aos="fade-up">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Ta Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
-</p>
+<p>Explore o Brasil de ponta a ponta com uma variedade de destinos cuidadosamente selecionados para todos os estilos de viajante. De praias paradisíacas no Nordeste a serras encantadoras no Sul, passando por cidades históricas e roteiros culturais, a Brasil GO conecta você aos lugares mais incríveis do país com facilidade, organização e suporte completo em cada viagem.
     </div>
 
 
@@ -108,28 +120,29 @@
 <div class="feature" data-aos="fade-up">
   <img src="./assets/icon/DESTINOS.svg" alt="">
 <h3>Múltiplos destinos</h3>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nihil iusto culpa autem! Reiciendis, incidunt quas saepe id, neque provident eligendi veritatis minima magni facere minus illo assumenda doloremque sapiente.</p>
+<p>Explore o Brasil de ponta a ponta com uma variedade de destinos cuidadosamente selecionados para todos os estilos de viajante. De praias paradisíacas no Nordeste a serras encantadoras no Sul, passando por cidades históricas e roteiros culturais, a Brasil GO conecta você aos lugares mais incríveis do país com facilidade, organização e suporte completo em cada viagem.</p>
 </div   >
 
 <div class="feature" data-aos="fade-up">
   <img src="./assets/icon/CLIENTES.svg" alt="">
 <h3>+ de 5.000 clientes</h3>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti non enim necessitatibus quaerat, nobis voluptatibus fugiat atque alias. Doloremque sapiente reiciendis minus aspernatur delectus reprehenderit ipsa laboriosam iste deleniti harum.</p>
+<p>Mais de 5.000 viajantes já confiaram na Brasil GO para transformar seus sonhos de viagem em realidade. Nossa missão é tornar cada experiência única, oferecendo suporte do início ao fim, desde o planejamento até o retorno para casa. Cada cliente representa uma história vivida, uma memória criada e uma nova aventura que começou com a gente.</p>
 </div>
 
 <div class="feature" data-aos="fade-up">
   <img src="./assets/icon/CERTIFICADA.svg" alt="">
 <h3>Certificada</h3>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi animi nemo laboriosam natus in totam atque culpa unde distinctio explicabo, eaque sapiente ducimus tempore sed consequatur. Nobis dolorem veniam quis!</p>
+<p>A Brasil GO é uma plataforma confiável e certificada, que trabalha apenas com parceiros verificados e experiências seguras. Nosso compromisso é garantir tranquilidade em cada etapa da sua viagem, oferecendo transparência, suporte dedicado e qualidade em todos os serviços disponibilizados para nossos clientes.</p>
 </div>
 </div>
   </div><!--div do container-->
+    <img src="./assets/icon/MALA.svg" class="mala-feature" alt="mala decorativa">
 </section>
 
-<section class="destinos">
+<section class="destinos" id="destinos">
 <div class="container" data-aos="fade-up">
 <h2>Destinos Nacionais</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+<p>O Brasil é um país cheio de diversidade, cultura e paisagens inesquecíveis. Nesta seção, você encontra os destinos mais procurados por nossos viajantes, selecionados com base em experiências reais, qualidade de hospedagem, atrações turísticas e custo-benefício. Escolha seu próximo destino e comece a planejar uma viagem que vai muito além do comum.</p>
 
 
 <!-- Cartões de destinos -->
@@ -260,32 +273,80 @@
 
 <!-- Newsletter -->
 
-<section class="reviews">
+<section class="reviews" id="clientes">
 
   <div class="container">
 <!-- Depoimentos -->
+ <div class="review-wrapper">
+  
+    <div class="review-container">
+
 <div class="depoimentos" data-aos="fade-right"> 
     <h1>Recomendados por mais de 5.000 clientes!</h1>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    <p>Mais do que viagens, entregamos experiências completas que ficam na memória de cada cliente. Aqui estão histórias reais de pessoas que confiaram na Brasil GO para conhecer novos lugares, viver novas culturas e criar momentos inesquecíveis. Cada depoimento representa uma jornada única, cheia de descobertas, emoções e satisfação em cada detalhe da viagem.</p>
 </div>
+
 <!-- Avaliação -->
-    <div class="avaliacao">
-      <div class="review-card" data-aos="fade-left">
-        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate."</p>
+    <div class="avaliacao" data-aos="fade-left">
+      
+      <div class="review-card" >
+ <div class="review-card active">
+        <img src="./assets/icon/JoaoSilvaPic.png" class="review-img">
+        <p>"A experiência com a Brasil GO foi simplesmente incrível! O processo de escolha do destino foi rápido, prático e muito intuitivo. A viagem superou todas as minhas expectativas, tudo organizado, sem dor de cabeça e com um suporte excelente do início ao fim. Com certeza vou viajar novamente com eles!"</p>
         <span>- João Silva</span>
+        <span class="location">São Paulo, Brasil</span>
+      </div>
     </div>
+
+    <div class="rating">
+      ⭐ 4.9
+    </div>
+
+    </div>
+
+
+      <div class="review-card">
+        <img src="./assets/icon/MariaSouzaPic.png" class="review-img">
+        <p>"Experiência incrível, viagem perfeita!"</p>
+        <span>- Maria Souza</span>
+      </div>
+
+      <div class="review-card">
+        <img src="./assets/icon/CarlosLimaPic.png" class="review-img">
+        <p>"Preço justo e suporte ótimo."</p>
+        <span>- Carlos Lima</span>
+        <span class="location"></span>
+      </div>
+    </div>
+
+    <div class="rating">
+      ⭐ 4.9
+    </div>
+
+      </div>
+  </div>
+ </div>
+
+    <!-- setas -->
+    <div class="review-controls">
+      <button class="prev"><</button>
+      <button class="next">></button>
+    </div>
+
+
+
 </div>
   </div>
 </section>
 
-<div class="newsletter">
+<div class="newsletter" id="contatos">
   <div class="container" data-aos="fade-up-right">
  <img src="./assets/icon/AVIÃO.svg" class="aviao" alt="avião">
 
 <h2>Assine e receba promoções incríveis!</h2>
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia porro dolore, voluptates earum at hic assumenda architecto, facilis atque nam enim non repellendus provident doloribus magni, esse ipsa! Expedita.</p>
+    <p>Fique por dentro das melhores promoções e oportunidades de viagem antes de todo mundo. Ao se inscrever na nossa newsletter, você recebe ofertas exclusivas, descontos especiais e sugestões de destinos incríveis para sua próxima aventura. Viajar bem começa com informação — e aqui você sempre estará um passo à frente.</p>
 
 <form>
   <div class="newsletter-form" data-aos="fade-up-left">
@@ -307,8 +368,7 @@
       <div>
       <h2>Nossa logo</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur. 
-        Aliquet malesuada tellus viverra ultrices egestas sociis gravida sem.
+        Viajar pelo Brasil nunca foi tão fácil. A Brasil GO nasceu para simplificar sua jornada, conectando você a destinos incríveis com tecnologia, segurança e uma experiência totalmente personalizada.
       </p>
 
       <div class="social" data-aos="fade-up">
@@ -371,5 +431,9 @@
         AOS.init();
     </script>
 
+
+
+
+ <script src="./js/feed.js"></script>
 </body>
 </html>

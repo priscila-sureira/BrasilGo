@@ -12,7 +12,7 @@ body{
 
 /*Nav*/
 .navbar{
-    position:absolute;
+    position:fixed;
     width: 100%;
     display:flex;
     justify-content:space-between;
@@ -21,6 +21,29 @@ body{
     background:transparent;
     z-index: 10;
 }
+
+
+.navbar.scrolled {
+    background: rgba(255, 45, 141, 0.85); /* leve */
+    backdrop-filter: blur(10px); /* efeito vidro */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 15px 60px;
+}
+
+
+.navbar.scrolled .btn-login-header {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+
+.navbar.scrolled .btn-login-header:hover {
+  background: #fff;
+  color: #ff2d8d;
+  border-color: #fff;
+}
+
 
 .logo {
     height:50px;
@@ -45,6 +68,13 @@ body{
     text-decoration:none;
     color:#333;
 }
+
+/* depois do scroll, avaliar */
+.navbar.scrolled .menu a {
+    color: #1a1a1a; 
+}
+
+
 
 .login-section {
   display: flex;
@@ -96,9 +126,11 @@ body{
     position: relative;
     padding-top: 100px;
     margin-top: 100;
+   
+    min-height: 100vh;
     background-position:center;
-    height:100vh;
     width: 100%;
+    padding-bottom: 60px;
     display:flex;
     align-items:center;
     overflow: hidden;
@@ -114,7 +146,9 @@ body{
 
 .hero-content{
     width: 100%;
-    display: flex;
+    margin-top: 90px;
+    display: grid;
+      grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
@@ -140,13 +174,38 @@ body{
 }
 
 .hero-text{
+  display: flex;
+  flex-direction: column;
     color:rgb(15, 14, 14);
     max-width:500px;
     justify-content: left;
 }
 
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+}
+
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+
+
+
+
+
+
 .hero h1{
     font-family:'Volkhov', serif;
+    margin-bottom: 40px;
     font-size: 64px;
     font-weight: 700;
     line-height: 1.1;
@@ -154,11 +213,11 @@ body{
     color: #1a1a1a;
 }
 
-.hero h6 {
+.hero-subtitle {
   font-size: 14px;
   color: #0e0d0d;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .config select {
@@ -174,8 +233,8 @@ body{
     position: absolute;
     top: 100px;
     left: 50%;
-    width: 701;
-    height: 101;
+    width: 701px;
+    height: 90px;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
@@ -185,12 +244,15 @@ body{
     padding: 20px 30px;
     border-radius: 50px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    
+    z-index: 20;
 }
 
 
 .btn-primary{
     display: inline-flex;
+    margin-top: 24px;
+    width: 290px;
+    height: 50px;
     align-items: center;
     background:#ff2d8d;
     gap: 10px;
@@ -199,8 +261,9 @@ body{
     color:white;
     font-size: 16px;
     font-weight: 600;
-    border-radius:25px;
+    border-radius:70px;
     cursor:pointer;
+    
 }
 
 .search-box {
@@ -224,6 +287,11 @@ body{
 .hero-images{
   position: relative;
   margin-left: auto;
+margin-top: 80px;
+padding-bottom: 120px;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 420px; /* largura total das 4 imagens */
   height: 420px; /* altura das imagens */
   transition: 0.6s ease; 
@@ -232,8 +300,8 @@ body{
 .img-main{
   position: absolute;
   width: 100%;
-top: 0;
-left: 0;
+top: 35%;
+left: 10%;
   transition: 0.4s ease;
   z-index: 3;
 }
@@ -244,7 +312,7 @@ left: 0;
 
 .img-back{
   position: absolute;
-  width: 200px;
+  width: 180px;
   border-radius: 15px;
   z-index: 1;
   box-shadow: 0px 15px 20px rgba(0,0,0,0.2);
@@ -257,21 +325,55 @@ left: 0;
 }
 
 .img1{
-  top: 20px;
-  left: -40px;
+  top: 10%;
+  left: -20px;
 }
 
 .img2{
-  top: 40px;
+  top: 70px;
   right: -40px;
 }
 
 .img3 {
   position: absolute;
    bottom: -40px;
+   top: 60%;
   left: 5%;
   transition: 0.3s ease;
 }
+
+
+
+.btn-hero {
+  position: relative;
+  width: 170px;
+  margin-top: 10px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.btn-outline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid #ff2d8d;
+  background: transparent;
+  color: #ff2d8d;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+    background-color: #ff2d8d;
+    color: white;
+}
+
 
 .field {
   display: flex;
@@ -289,8 +391,12 @@ left: 0;
 }
 
 .features{
+  position: relative;
+  margin-bottom: 220px;
     text-align: center;
-    padding: 60px;
+    padding-bottom: 40px;
+     padding: 100px 60px 80px;
+   
 }
 
 .icon {
@@ -301,11 +407,13 @@ left: 0;
     justify-content: center;
     font-family:'Volkhov', serif;
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .features-desc {
     justify-content: center;
+    margin-bottom: 80px;
+     line-height: 1.6;
   color: #070707;
   margin-bottom: 40px;
 }
@@ -323,18 +431,45 @@ left: 0;
 }
 
 .feature-container{
+   position: relative;
+    z-index: 2;
     display:flex;
     justify-content:center;
-    gap:40px;
+    gap:100px;
     margin-top:40px;
     text-align: center;
 }
 
+
+
+.mala-feature{
+    position: absolute;
+
+    width: 380px;   /* ajuste conforme Figma */
+    height: auto;
+
+    bottom: -300px;  /* fica “saindo” da seção */
+    left: -40px;     /* posição lateral igual design */
+  /* efeito decorativo leve */
+    filter: blur(0.5px);
+overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+
+
 .destinos{
     position: relative;
+    margin-bottom: 120px;
     padding:60px;
     text-align:center;
     overflow: hidden;
+}
+
+#destinos {
+  scroll-margin-top: 120px;
 }
 
 .destinos h2{
@@ -508,6 +643,8 @@ font-weight: 36px;
 .depoimentos {
   flex: 1;
   max-width: 500px;
+  text-align: left;
+  gap: 20px;
 }
 
 .depoimentos h1{
@@ -525,14 +662,31 @@ font-weight: 36px;
 }
 
 .avaliacao {
-  flex: 1;
-  display: flex;
+   flex: 1;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 20px;
+ width: 100%;
+  gap: 20px;
   justify-content: flex-end; /* joga pro lado direito */
+  
+  height: 180px;
+
+  overflow: hidden;
+
+  scroll-behavior: smooth;
+}
+
+.review-wrapper{
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .reviews {
   padding: 60%px;
+  margin-top: 100px;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
@@ -540,12 +694,42 @@ font-weight: 36px;
   padding: 60px;
 }
 
+.review-img {
+  position: absolute;
+  top: -25px;
+  left: 20px;
+
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+ 
+}
+
+#clientes {
+  scroll-margin-top: 120px;
+}
+
 .review-card {
+  position: relative;
+  margin-top: 30px;
   background: rgb(209, 207, 207);
   padding: 25px;
-  border-radius: 15px;
+   min-width: 10%;
+  border-radius: 16px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+   overflow: visible;
   max-width: 350px;
+   opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.5s ease;
+}
+
+.review-card.active {
+  opacity: 1;
+  transform: translateX(0);
+ 
 }
 
 .review-card p {
@@ -557,6 +741,79 @@ font-weight: 36px;
   font-weight: bold;
   color: #333;
 }
+
+
+.review-card:nth-child(2) {
+  transform: translateX(25px) scale(0.97);
+  opacity: 0.6;
+  z-index: 2;
+}
+
+.review-card:nth-child(3) {
+  transform: translateX(50px) scale(0.94);
+  opacity: 0.3;
+  z-index: 1;
+}
+
+
+
+
+
+
+/* setinhas */
+.review-controls {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.review-controls button {
+  width: 40px;
+  height: 40px;
+
+  background: rgb(148, 148, 148);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.review-controls button:hover {
+  transform: scale(1.1);
+}
+
+.review-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.review-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   max-width: 1200px;
+  margin: 0 auto;
+
+  gap: 120px;
+  gap: 60px;
+  position: relative;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
   .reviews {
@@ -583,12 +840,15 @@ font-weight: 36px;
 
 .aviao {
     position: absolute;
+    width: 330px;
+    height: auto;
+    left: -160px;  
+    right:auto; 
+    bottom: -118px; 
+    width: 140px;
 
-    left: 60px;   /* controla lateral */
-    bottom: -60px; /*faz ele ficar embaixo */
-    width: 160px;
-
-    transform: rotate(-20deg);
+  transform: rotate(-5deg);
+   pointer-events: none;
     z-index: 1;
 }
 
@@ -604,6 +864,7 @@ font-weight: 36px;
     border-radius:20px;
     width: 300px;
     outline: none;
+    
 }
 
 .newsletter button{
@@ -627,6 +888,8 @@ font-weight: 36px;
   padding: 14px 120px 14px 20px; /* espaço pro botão */
   border: none;
   border-radius: 30px;
+
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
   outline: none;
   font-size: 14px;
 }

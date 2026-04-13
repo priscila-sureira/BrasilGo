@@ -31,13 +31,57 @@ window.addEventListener('load', () => {
 
 //Carrosel
 
-const container = document.querySelector('.card-container');
 
-document.querySelector('.next').onclick = () => {
-  container.scrollBy({ left: 300, behavior: 'smooth' });
-};
 
-document.querySelector('.prev').onclick = () => {
-  container.scrollBy({ left: -300, behavior: 'smooth' });
-};
+
+
+
+//depoimentos
+const cards = document.querySelectorAll(".review-card");
+let index = 0;
+
+function updateCards() {
+  cards.forEach((card, i) => {
+    card.classList.toggle("active", i === index);
+  });
+}
+
+document.querySelector("#nextReview").addEventListener("click", () => {
+  index = (index + 1) % cards.length;
+  updateCards();
+});
+
+document.querySelector("#prevReview").addEventListener("click", () => {
+  index = (index - 1 + cards.length) % cards.length;
+  updateCards();
+});
+
+updateCards();
+
+
+
+
+
+document.querySelector(".prev").addEventListener("click", () => {
+  index = (index - 1 + cards.length) % cards.length;
+  updateCards();
+});
+
+// init
+updateCards();
+
+
+
+
+//navbar scroll
+window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
+
+    if (window.scrollY > 80) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+
 
