@@ -30,7 +30,10 @@
   max-width: 1400px;
 }
 
-.logo,
+.logo {
+  height: 60px;
+}
+
 .user {
   display: flex;
   height: 50px;
@@ -133,7 +136,7 @@
 .conteudo-section li:hover,
 .fotter-section:hover {
   transform: scale(1.1);
-  background-color: #3A0CA3; 
+  background-color: #3a0ca3;
   color: white;
   border-radius: 5px;
 }
