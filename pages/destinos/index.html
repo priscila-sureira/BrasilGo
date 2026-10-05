@@ -4,12 +4,12 @@
     <link rel="stylesheet" href="./css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <meta name="description" content="Confira os destinos nacionais da Brasil GO: Gramado, Rio de Janeiro, Maceió, Foz do Iguaçu e muito mais.">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <title>Destino</title>
+    <title>Destinos | Brasil GO</title>
   </head>
   <body>
     <header class="cabeca">
@@ -33,27 +33,26 @@
         </nav>
 
         <section class="pesquisa">
-          <form class="pesquisa-form">
+          <form class="pesquisa-form" role="search" id="form-busca">
             <div class="campo">
-              <label
-                >Destino
+              <label for="busca-destino">Destino
                 <img
                   src="./../../assets/images/arrow_drop_down_24dp_F72585_FILL0_wght400_GRAD0_opsz24.png"
-                  alt="Seta"
+                  alt=""
               /></label>
-              <input type="text" placeholder="Para onde quer ir?" />
+              <input type="text" id="busca-destino" name="destino" placeholder="Para onde quer ir?" autocomplete="off" />
             </div>
 
             <div class="campo">
-              <label
-                >Datas
+              <label for="busca-data">Datas
                 <img
                   src="./../../assets/images/arrow_drop_down_24dp_F72585_FILL0_wght400_GRAD0_opsz24.png"
+                  alt=""
               /></label>
-              <input type="date" placeholder="Quando quer ir?" />
+              <input type="date" id="busca-data" name="data" />
             </div>
 
-            <button type="button">Buscar</button>
+            <button type="button" id="btn-buscar">Buscar</button>
           </form>
         </section>
       </div>
@@ -64,12 +63,12 @@
 
       <div class="grid">
         <article
-          class="card"
+          class="card" tabindex="0" aria-haspopup="dialog"
           data-titulo="Gramado"
           data-local="Rio Grande do Sul"
           data-descricao="Gramado, na Serra Gaúcha, é o destino perfeito para quem busca charme, clima aconchegante e experiências inesquecíveis. Com arquitetura inspirada na Europa, ótima gastronomia e atrações para todos os estilos, a cidade combina beleza e conforto na medida certa para transformar qualquer viagem em algo especial."
         >
-          <img src="./../../assets/images/gramado.jpg" alt="gramado" />
+          <img src="./../../assets/images/gramado.jpg" loading="lazy" alt="gramado" />
           <div class="info">
             <div class="textos">
               <h3>Gramado</h3>
@@ -82,7 +81,7 @@
                 <span>4.8</span>
                 <small>(957 reviews)</small>
               </div>
-              <a href="./../origem/index.html">
+              <a href="./../origem-parte2/tipo1.html">
                 <span class="preco">R$ 4.427</span>
               </a>
             </div>
@@ -90,13 +89,13 @@
         </article>
 
         <article
-          class="card"
+          class="card" tabindex="0" aria-haspopup="dialog"
           data-titulo="Florianópolis"
           data-local="Santa Catarina"
           data-descricao="Florianópolis combina praias deslumbrantes, natureza preservada e uma atmosfera leve que faz qualquer um esquecer da vida corrida. Com opções que vão de cenários tranquilos a pontos badalados, a cidade entrega o equilíbrio perfeito entre descanso, aventura e boa gastronomia."
         >
           <img
-            src="./../../assets/images/florianópolis.jpg"
+            src="./../../assets/images/florianópolis.jpg" loading="lazy"
             alt="florianópolis"
           />
           <div class="info">
@@ -111,7 +110,7 @@
                 <span>4.8</span>
                 <small>(957 reviews)</small>
               </div>
-              <a href="./../origem/index.html">
+              <a href="./../origem-parte2/tipo1.html">
                 <span class="preco">R$ 4.427</span>
               </a>
             </div>
@@ -119,13 +118,13 @@
         </article>
 
         <article
-          class="card"
+          class="card" tabindex="0" aria-haspopup="dialog"
           data-titulo="Foz do Iguaçu"
           data-local="Paraná"
           data-descricao="Foz do Iguaçu é o tipo de lugar que faz qualquer outro destino parecer tímido. Lar das impressionantes Cataratas do Iguaçu, a cidade combina natureza grandiosa, experiências únicas e um encontro cultural entre três países, criando uma viagem intensa, marcante e difícil de superar."
         >
           <img
-            src="./../../assets/images/foz-do-iguaçu.jpg"
+            src="./../../assets/images/foz-do-iguaçu.jpg" loading="lazy"
             alt="Foz do Iguaçu"
           />
           <div class="info">
@@ -139,7 +138,7 @@
                 <span>4.8</span>
                 <small>(957 reviews)</small>
               </div>
-              <a href="./../origem/index.html">
+              <a href="./../origem-parte2/tipo1.html">
                 <span class="preco">R$ 4.427</span>
               </a>
             </div>
@@ -147,13 +146,13 @@
         </article>
 
         <article
-          class="card"
+          class="card" tabindex="0" aria-haspopup="dialog"
           data-titulo="Rio de Janeiro"
           data-local="Rio de Janeiro"
           data-descricao="O Rio de Janeiro entrega um pacote que muita cidade promete e quase nenhuma cumpre: paisagens icônicas como o Cristo Redentor e o Pão de Açúcar, praias famosas e uma energia que mistura natureza e vida urbana sem esforço. É o tipo de destino que funciona tanto para relaxar quanto para viver experiências marcantes, sem precisar escolher muito."
         >
           <img
-            src="./../../assets/images/rio-de-janeiro.jpg"
+            src="./../../assets/images/rio-de-janeiro.jpg" loading="lazy"
             alt="Rio de Janeiro"
           />
           <div class="info">
@@ -167,7 +166,7 @@
                 <span>4.8</span>
                 <small>(957 reviews)</small>
               </div>
-              <a href="./../origem/index.html">
+              <a href="./../origem-parte2/tipo1.html">
                 <span class="preco">R$ 4.427</span>
               </a>
             </div>
@@ -175,12 +174,12 @@
         </article>
 
         <article
-          class="card"
+          class="card" tabindex="0" aria-haspopup="dialog"
           data-titulo="São Paulo"
           data-local="São Paulo"
           data-descricao="São Paulo é o destino para quem quer variedade sem paciência para monotonia. A cidade reúne gastronomia de alto nível, cultura intensa e pontos icônicos como a Avenida Paulista, oferecendo experiências que vão do sofisticado ao alternativo em poucos quarteirões. É movimento, diversidade e oportunidade o tempo todo, do jeito que uma metrópole de verdade deveria ser."
         >
-          <img src="./../../assets/images/são-Paulo.jpg" alt="São paulo" />
+          <img src="./../../assets/images/são-Paulo.jpg" loading="lazy" alt="São paulo" />
           <div class="info">
             <div class="textos">
               <h3>São Paulo</h3>
@@ -192,7 +191,7 @@
                 <span>4.8</span>
                 <small>(957 reviews)</small>
               </div>
-              <a href="./../origem/index.html">
+              <a href="./../origem-parte2/tipo1.html">
                 <span class="preco">R$ 4.427</span>
               </a>
             </div>
@@ -200,12 +199,12 @@
         </article>
 
         <article
-          class="card"
+          class="card" tabindex="0" aria-haspopup="dialog"
           data-titulo="Campos do Jordão"
           data-local="São Paulo"
           data-descricao="Campos do Jordão é o refúgio perfeito para quem quer um clima de montanha com um toque europeu sem sair do Brasil. Com arquitetura charmosa, clima frio e lugares como o Capivari, a cidade oferece experiências aconchegantes, boa gastronomia e aquele ar de tranquilidade que faz qualquer viagem parecer mais especial do que realmente deveria ser."
         >
-          <img src="./../../assets/images/gramado.jpg" alt="Gramado" />
+          <img src="./../../assets/images/campos-do-jordão.jpg" loading="lazy" alt="Campos do Jordão" />
           <div class="info">
             <div class="textos">
               <h3>Gramado</h3>
@@ -217,7 +216,7 @@
                 <span>4.8</span>
                 <small>(957 reviews)</small>
               </div>
-              <a href="./../origem/index.html">
+              <a href="./../origem-parte2/tipo1.html">
                 <span class="preco">R$ 4.427</span>
               </a>
             </div>
@@ -225,12 +224,12 @@
         </article>
 
         <article
-          class="card"
+          class="card" tabindex="0" aria-haspopup="dialog"
           data-titulo="Salvador"
           data-local="Bahia"
           data-descricao="Salvador mistura história, cultura e energia de um jeito que pouca cidade consegue sustentar sem parecer exagero. Com cenários como o Pelourinho, praias marcantes e uma gastronomia cheia de identidade, é um destino vibrante que transforma qualquer viagem em uma experiência intensa e memorável."
         >
-          <img src="./../../assets/images/salvador.jpg" alt="Salvador" />
+          <img src="./../../assets/images/salvador.jpg" loading="lazy" alt="Salvador" />
           <div class="info">
             <div class="textos">
               <h3>Salvador</h3>
@@ -242,7 +241,7 @@
                 <span>4.8</span>
                 <small>(957 reviews)</small>
               </div>
-              <a href="./../origem/index.html">
+              <a href="./../origem-parte2/tipo1.html">
                 <span class="preco">R$ 4.427</span>
               </a>
             </div>
@@ -250,12 +249,12 @@
         </article>
 
         <article
-          class="card"
+          class="card" tabindex="0" aria-haspopup="dialog"
           data-titulo="Maceió"
           data-local="Alagoas"
           data-descricao="Maceió é o tipo de destino que faz o Caribe parecer um pouco menos exclusivo. Com águas cristalinas, piscinas naturais e cenários como a Praia de Pajuçara, a cidade combina tranquilidade, beleza e uma vibe leve que transforma qualquer viagem em puro descanso com paisagens de cartão-postal."
         >
-          <img src="./../../assets/images/maceió.jpg" alt="maceió" />
+          <img src="./../../assets/images/maceió.jpg" loading="lazy" alt="maceió" />
           <div class="info">
             <div class="textos">
               <h3>Maceió</h3>
@@ -267,7 +266,7 @@
                 <span>4.8</span>
                 <small>(957 reviews)</small>
               </div>
-              <a href="./../origem/index.html">
+              <a href="./../origem-parte2/tipo1.html">
                 <span class="preco">R$ 4.427</span>
               </a>
             </div>
@@ -275,13 +274,13 @@
         </article>
 
         <article
-          class="card"
+          class="card" tabindex="0" aria-haspopup="dialog"
           data-titulo="Jericoacoara"
           data-local="Ceará"
           data-descricao="Jericoacoara é o tipo de lugar que parece inventado por alguém cansado da vida urbana. Entre dunas, lagoas cristalinas e cenários como a Pedra Furada, o destino entrega simplicidade com beleza absurda, perfeito para quem quer desacelerar sem abrir mão de experiências memoráveis."
         >
           <img
-            src="./../../assets/images/jericoacoara.jpg"
+            src="./../../assets/images/jericoacoara.jpg" loading="lazy"
             alt="Jericoacoara"
           />
           <div class="info">
@@ -295,7 +294,7 @@
                 <span>4.8</span>
                 <small>(957 reviews)</small>
               </div>
-              <a href="./../origem/index.html">
+              <a href="./../origem-parte2/tipo1.html">
                 <span class="preco">R$ 4.427</span>
               </a>
             </div>
@@ -303,13 +302,13 @@
         </article>
 
         <article
-          class="card"
+          class="card" tabindex="0" aria-haspopup="dialog"
           data-titulo="Porto de Galinhas"
           data-local="Pernambuco"
           data-descricao="Porto de Galinhas é o tipo de destino que entrega exatamente o que você espera e ainda assim consegue surpreender. Com águas cristalinas, piscinas naturais e cenários como a Piscinas Naturais de Porto de Galinhas, é perfeito para quem busca tranquilidade, beleza e aquele clima de férias que realmente funciona."
         >
           <img
-            src="./../../assets/images/porto-de-galinhas.jpg"
+            src="./../../assets/images/porto-de-galinhas.jpg" loading="lazy"
             alt="Porto de Galinhas"
           />
           <div class="info">
@@ -323,7 +322,7 @@
                 <span>4.8</span>
                 <small>(957 reviews)</small>
               </div>
-              <a href="./../origem/index.html">
+              <a href="./../origem-parte2/tipo1.html">
                 <span class="preco">R$ 4.427</span>
               </a>
             </div>
@@ -331,12 +330,12 @@
         </article>
 
         <article
-          class="card"
+          class="card" tabindex="0" aria-haspopup="dialog"
           data-titulo="Manaus"
           data-local="Amazonas"
           data-descricao="Manaus é onde a natureza decide humilhar qualquer outro destino sem esforço. Porta de entrada da Amazônia, a cidade combina cultura, história e experiências únicas como o Encontro das Águas, criando uma viagem intensa, diferente e impossível de ignorar."
         >
-          <img src="./../../assets/images/manaus.jpg" alt="Manaus" />
+          <img src="./../../assets/images/manaus.jpg" loading="lazy" alt="Manaus" />
           <div class="info">
             <div class="textos">
               <h3>Manaus</h3>
@@ -348,7 +347,7 @@
                 <span>4.8</span>
                 <small>(957 reviews)</small>
               </div>
-              <a href="./../origem/index.html">
+              <a href="./../origem-parte2/tipo1.html">
                 <span class="preco">R$ 4.427</span>
               </a>
             </div>
@@ -356,13 +355,13 @@
         </article>
 
         <article
-          class="card"
+          class="card" tabindex="0" aria-haspopup="dialog"
           data-titulo="Cânions"
           data-local="Santa Catarina"
           data-descricao="Os Cânions de Santa Catarina, na região dos Aparados da Serra e da Serra Geral, oferecem paisagens impressionantes com paredões gigantes, trilhas e mirantes de tirar o fôlego. É o destino perfeito para quem busca aventura, contato com a natureza e cenários dramáticos que fazem qualquer viagem parecer muito mais épica do que o normal."
         >
           <img
-            src="./../../assets/images/cânions.jpg"
+            src="./../../assets/images/cânions.jpg" loading="lazy"
             alt="Chapada dos Veadeiros"
           />
           <div class="info">
@@ -376,19 +375,19 @@
                 <span>4.8</span>
                 <small>(957 reviews)</small>
               </div>
-              <a href="./../"></a>
-              <a href="./../origem/index.html">
+              <a href="./../origem-parte2/tipo1.html">
                 <span class="preco">R$ 4.427</span>
               </a>
             </div>
           </div>
         </article>
       </div>
+      <p id="sem-resultados" class="sem-resultados" role="status" hidden>Nenhum destino encontrado para a sua busca.</p>
     </section>
 
-    <div id="modal" class="modal hidden">
+    <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
       <div class="modal-content">
-        <button class="fechar">✕</button>
+        <button type="button" class="fechar" aria-label="Fechar">✕</button>
 
         <h2 id="modal-titulo"></h2>
         <p id="modal-local"></p>
@@ -401,16 +400,13 @@
         <div class="logo">
           <img src="./../../assets/images/Logo.png" alt="logo" />
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo nulla
-            quas temporibus corrupti amet iusto velit alias repellat commodi ab?
-            Possimus, cupiditate. Animi, iste dolore perspiciatis at quos
-            tempora fuga.
+            Viajar pelo Brasil nunca foi tão fácil. A Brasil GO nasceu para simplificar sua jornada, conectando você a destinos incríveis com tecnologia, segurança e uma experiência totalmente personalizada.
           </p>
 
           <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
           </div>
         </div>
 

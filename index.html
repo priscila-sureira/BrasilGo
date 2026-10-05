@@ -4,21 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil GO | Viagens nacionais: descubra os melhores destinos do Brasil</title>
+    <meta name="description" content="Projeto Brasil GO: plataforma de viagens nacionais para buscar destinos, comparar opções e planejar a viagem. Protótipo front-end desenvolvido no programa PROA + Serasa Experian.">
+    <meta name="theme-color" content="#ff2d8d">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Brasil GO | Viagens nacionais">
+    <meta property="og:description" content="Descubra o Brasil de um jeito novo: destinos, datas e reservas em um só lugar (protótipo front-end).">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <title>Brasil GO</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
   <!--cabeçalho-->
 <header class="navbar">
-    <img src="./assets/icon/LOGO.svg" alt="Logo da Brasil GO" class="logo">
+    <a href="./index.html" class="logo-link"><img src="./assets/icon/LOGO.svg" alt="Brasil GO - página inicial" class="logo"></a>
 
-    <nav class="menu">
-        <a href="./index.html">INICIO</a>
+    <nav class="menu" id="menu" aria-label="Principal">
+        <a href="./index.html">INÍCIO</a>
         <a href="./pages/destinos/index.html">DESTINOS</a>
         <a href="#clientes">CLIENTES</a>
         <a href="#contatos">CONTATOS</a>
@@ -27,16 +35,19 @@
 <!-- LINK DE LOGIN -->
  <div class="login-section">
         <a href="./pages/perfil/index.html" class="profile">
-          <img src="./assets/icon/PROFILE.svg" alt="Ícone de perfil"></a>
-<a href="./pages/minhasviagens/index.html" >
-    <button class="btn-login-header">Minhas viagens</button>
-</a>
+          <img src="./assets/icon/PROFILE.svg" alt="Meu perfil"></a>
+<a href="./pages/minhasviagens/index.html" class="btn-login-header">Minhas viagens</a>
   </div>
+
+    <button type="button" class="menu-toggle" id="menu-toggle" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
 
     
 </header>
 
-    <section id="home">
+<main>
+    <section id="home" aria-label="Buscar viagem">
       <div class="configuracao-viagem">
         <div class="config">
           <select name="Destino" id="Destino">
@@ -45,29 +56,23 @@
             <option value="Rio de Janeiro">Rio de Janeiro</option>
             <option value="Maceió">Maceió</option>
           </select>
-          <p>Para onde quer ir?</p>
+          <label for="Destino">Para onde quer ir?</label>
         </div>
         <div class="config">
-          <select name="DATAS" id="DATAS">
-            <option value="DATA" selected>DATA</option>
-            <option value="22/06/2023">22/06/2023</option>
-            <option value="30/06/2023">30/06/2023</option>
-            <option value="07/07/2023">07/07/2023</option>
-          </select>
-          <p>Quando quer ir?</p>
+          <input type="date" name="DATAS" id="DATAS">
+          <label for="DATAS">Quando quer ir?</label>
         </div>
         <a class="btn-login" href="./pages/destinos/index.html">
-          <img src="./assets/icon/LUPA.svg" alt="Ícone de busca">
+          <img src="./assets/icon/LUPA.svg" alt="">
           BUSCAR
         </a>
       </div>
     </section>
-<main>
-    
+
 <!-- Hero -->
  <section class="hero">
 
-    <img src="./assets/images/Background.svg" alt="Background do" class="hero-image">
+    <img src="./assets/images/Background.svg" alt="" class="hero-image">
 
     <div class="container">
 
@@ -78,10 +83,8 @@
         <h1>Descubra o mundo com a Brasil GO!</h1>
         <p class="hero-subtitle">Descubra o Brasil de uma forma totalmente nova com a Brasil GO. Planeje suas viagens com facilidade, encontre os melhores destinos do país e viva experiências inesquecíveis com conforto, segurança e praticidade em cada etapa da sua jornada. Aqui, viajar deixa de ser complicado e se torna algo leve, acessível e cheio de memórias que você vai guardar para sempre.</p>
 
-         <a href="./pages/destinos/index.html"
-        <button class="btn-primary">
-          <img src="./assets/icon/Explorer.svg" alt="Ícone de explorar">EXPLORAR DESTINOS
-        </button>
+         <a href="./pages/destinos/index.html" class="btn-primary">
+          <img src="./assets/icon/Explorer.svg" alt="">EXPLORAR DESTINOS
         </a>
         </div>
 </div>
@@ -90,13 +93,13 @@
 
 <div class="hero-images">
 
-    <img src="./assets/images/RIOhero.svg" class="img-back img1">
+    <img src="./assets/images/RIOhero.svg" class="img-back img1" alt="">
 
-    <img src="./assets/images/FOZhero.svg" class="img-back img2">
+    <img src="./assets/images/FOZhero.svg" class="img-back img2" alt="">
 
-<img src="./assets/images/CATARATAShero.svg" class="img-back img3">
+<img src="./assets/images/CATARATAShero.svg" class="img-back img3" alt="">
 
-    <img src="./assets/images/MUNDO_hero.svg" class="img-main">
+    <img src="./assets/images/MUNDO_hero.svg" class="img-main" alt="">
     
   </div>
    <a href="./pages/cadastro/cadastro.html" class="btn-outline btn-hero">
@@ -112,7 +115,7 @@
   <div class="container" data-aos="fade-up">
   <h2>Por que escolher a Brasil GO?</h2>
     <div class="feature-desc" data-aos="fade-up">
-<p>Explore o Brasil de ponta a ponta com uma variedade de destinos cuidadosamente selecionados para todos os estilos de viajante. De praias paradisíacas no Nordeste a serras encantadoras no Sul, passando por cidades históricas e roteiros culturais, a Brasil GO conecta você aos lugares mais incríveis do país com facilidade, organização e suporte completo em cada viagem.
+<p>Explore o Brasil de ponta a ponta com uma variedade de destinos cuidadosamente selecionados para todos os estilos de viajante. De praias paradisíacas no Nordeste a serras encantadoras no Sul, passando por cidades históricas e roteiros culturais, a Brasil GO conecta você aos lugares mais incríveis do país com facilidade, organização e suporte completo em cada viagem.</p>
     </div>
 
 
@@ -121,7 +124,7 @@
   <img src="./assets/icon/DESTINOS.svg" alt="">
 <h3>Múltiplos destinos</h3>
 <p>Explore o Brasil de ponta a ponta com uma variedade de destinos cuidadosamente selecionados para todos os estilos de viajante. De praias paradisíacas no Nordeste a serras encantadoras no Sul, passando por cidades históricas e roteiros culturais, a Brasil GO conecta você aos lugares mais incríveis do país com facilidade, organização e suporte completo em cada viagem.</p>
-</div   >
+</div>
 
 <div class="feature" data-aos="fade-up">
   <img src="./assets/icon/CLIENTES.svg" alt="">
@@ -136,7 +139,7 @@
 </div>
 </div>
   </div><!--div do container-->
-    <img src="./assets/icon/MALA.svg" class="mala-feature" alt="mala decorativa">
+    <img src="./assets/icon/MALA.svg" class="mala-feature" alt="" loading="lazy">
 </section>
 
 <section class="destinos" id="destinos">
@@ -149,84 +152,84 @@
 <div class="card-container">
 
 <article class="card">
-<img src="./assets/images/GRAMADO.png">
+<img src="./assets/images/GRAMADO.png" alt="Gramado, Rio Grande do Sul" loading="lazy" decoding="async">
 <div class="card-content">
 
   <!-- Título e avaliação -->
   <div class="top-section">
-<h4>GRAMADO</h4>
+<h3>GRAMADO</h3>
 <div class="rating">⭐ 4.8 (957 reviews)
 </div>
   </div>
 <div class="bottom-section">
  <span class="location"><i class="fa-solid fa-location-dot"></i> R. Grande do Sul</span>
 
-<button>R$2.766,00</button>
+<button type="button">R$2.766,00</button>
 
 </div>
 </div>
 </article>
 
 <article class="card">
-<img src="./assets/images/Rio.png">
+<img src="./assets/images/Rio.png" alt="Rio de Janeiro" loading="lazy" decoding="async">
 <div class="card-content">
   <div class="top-section">
-<h4>RIO</h4>
+<h3>RIO</h3>
 <div class="rating">
  ⭐ 4.8 (957 reviews)
 </div>
   </div>
 <div class="bottom-section">
   <span class="location"><i class="fa-solid fa-location-dot"></i> Rio de Janeiro</span>
-<button>R$4.477,00</button>
+<button type="button">R$4.477,00</button>
 </div>
 </div>
 </article>
 
 <article class="card">
-<img src="./assets/images/MACEIÓ.png">
+<img src="./assets/images/MACEIÓ.png" alt="Maceió, Alagoas" loading="lazy" decoding="async">
 <div class="card-content">
   <div class="top-section">
-<h4>MACEIÓ</h4>
+<h3>MACEIÓ</h3>
 <div class="rating">
  ⭐ 4.8 (957 reviews)
 </div>
   </div>
 <div class="bottom-section">
   <span class="location"><i class="fa-solid fa-location-dot"></i> Alagoas</span>
-<button>R$3.200,00</button>
+<button type="button">R$3.200,00</button>
 </div>
 </div>
 </article>
 
 <article class="card">
-<img src="./assets/images/FOZ.jfif">
+<img src="./assets/images/FOZ.jfif" alt="Foz do Iguaçu, Paraná" loading="lazy" decoding="async">
 <div class="card-content">
   <div class="top-section">
-<h4>FOZ DO IGUAÇU</h4>
+<h3>FOZ DO IGUAÇU</h3>
 <div class="rating">
  ⭐ 4.8 (957 reviews)
 </div>
   </div>
 <div class="bottom-section">
   <span class="location"><i class="fa-solid fa-location-dot"></i> Paraná</span>
-<button>R$3.200,00</button>
+<button type="button">R$3.200,00</button>
 </div>
 </div>
 </article>
 
 <article class="card">
-<img src="./assets/images/Jericoara.jfif">
+<img src="./assets/images/Jericoara.jfif" alt="Jericoacoara, Ceará" loading="lazy" decoding="async">
 <div class="card-content">
   <div class="top-section">
-<h4>JERICOARA</h4>
+<h3>JERICOACOARA</h3>
 <div class="rating">
  ⭐ 4.8 (957 reviews)
 </div>
   </div>
 <div class="bottom-section">
   <span class="location"><i class="fa-solid fa-location-dot"></i> Ceará</span>
-<button>R$3.200,00</button>
+<button type="button">R$3.200,00</button>
 </div>
 </div>
 </article>
@@ -235,33 +238,33 @@
 
 
 <article class="card">
-<img src=".//assets/images/ChapadaDiamantina.jfif">
+<img src="./assets/images/ChapadaDiamantina.jfif" alt="Chapada Diamantina, Bahia" loading="lazy" decoding="async">
 <div class="card-content">
   <div class="top-section">
-<h4>CHAPADA DIAMANTINA</h4>
+<h3>CHAPADA DIAMANTINA</h3>
 <div class="rating">
  ⭐ 4.8 (957 reviews)
 </div>
   </div>
 <div class="bottom-section">
   <span class="location"><i class="fa-solid fa-location-dot"></i> Bahia</span>
-<button>R$3.200,00</button>
+<button type="button">R$3.200,00</button>
 </div>
 </div>
 </article>
 
 <article class="card">
-<img src="./assets/images/Noronha.jfif">
+<img src="./assets/images/Noronha.jfif" alt="Fernando de Noronha, Pernambuco" loading="lazy" decoding="async">
 <div class="card-content">
   <div class="top-section">
-<h4>FERNANDO DE NORONHA</h4>
+<h3>FERNANDO DE NORONHA</h3>
 <div class="rating">
  ⭐ 4.8 (957 reviews)
 </div>
   </div>
 <div class="bottom-section">
   <span class="location"><i class="fa-solid fa-location-dot"></i> Pernambuco</span>
-<button>R$3.200,00</button>
+<button type="button">R$3.200,00</button>
 </div>
 </div>
 </article>
@@ -273,79 +276,61 @@
 
 <!-- Newsletter -->
 
-<section class="reviews" id="clientes">
+<section class="reviews" id="clientes" aria-labelledby="titulo-depoimentos">
 
   <div class="container">
-<!-- Depoimentos -->
- <div class="review-wrapper">
-  
-    <div class="review-container">
+    <div class="review-wrapper">
+      <div class="review-container">
 
-<div class="depoimentos" data-aos="fade-right"> 
-    <h1>Recomendados por mais de 5.000 clientes!</h1>
+        <div class="depoimentos" data-aos="fade-right">
+          <h2 id="titulo-depoimentos">Recomendados por mais de 5.000 clientes!</h2>
+          <p>Mais do que viagens, entregamos experiências completas que ficam na memória de cada cliente. Aqui estão histórias reais de pessoas que confiaram na Brasil GO para conhecer novos lugares, viver novas culturas e criar momentos inesquecíveis.</p>
+        </div>
 
-    <p>Mais do que viagens, entregamos experiências completas que ficam na memória de cada cliente. Aqui estão histórias reais de pessoas que confiaram na Brasil GO para conhecer novos lugares, viver novas culturas e criar momentos inesquecíveis.</p>
-</div>
+        <div class="avaliacao" data-aos="fade-left" role="region" aria-roledescription="carrossel" aria-label="Depoimentos de clientes">
 
-<!-- Avaliação -->
-    <div class="avaliacao" data-aos="fade-left">
-      
-      <div class="review-card" >
- <div class="review-card active">
-        <img src="./assets/icon/JoaoSilvaPic.png" class="review-img">
-        <p>"A experiência com a Brasil GO foi simplesmente incrível! O processo de escolha do destino foi rápido, prático e muito intuitivo. A viagem superou todas as minhas expectativas, tudo organizado, sem dor de cabeça e com um suporte excelente do início ao fim. Com certeza vou viajar novamente com eles!"</p>
-        <span>- João Silva</span>
-        <span class="location">São Paulo, Brasil</span>
+          <figure class="review-card active">
+            <img src="./assets/icon/JoaoSilvaPic.png" class="review-img" alt="" width="55" height="55" loading="lazy">
+            <blockquote><p>"A experiência com a Brasil GO foi simplesmente incrível! O processo de escolha do destino foi rápido, prático e muito intuitivo. A viagem superou todas as minhas expectativas, tudo organizado, sem dor de cabeça e com um suporte excelente do início ao fim. Com certeza vou viajar novamente com eles!"</p></blockquote>
+            <figcaption><span>- João Silva</span> <span class="location">São Paulo, Brasil</span></figcaption>
+          </figure>
+
+          <figure class="review-card">
+            <img src="./assets/icon/MariaSouzaPic.png" class="review-img" alt="" width="55" height="55" loading="lazy">
+            <blockquote><p>"Experiência incrível, viagem perfeita!"</p></blockquote>
+            <figcaption><span>- Maria Souza</span></figcaption>
+          </figure>
+
+          <figure class="review-card">
+            <img src="./assets/icon/CarlosLimaPic.png" class="review-img" alt="" width="55" height="55" loading="lazy">
+            <blockquote><p>"Preço justo e suporte ótimo."</p></blockquote>
+            <figcaption><span>- Carlos Lima</span></figcaption>
+          </figure>
+
+          <div class="review-controls">
+            <button type="button" id="prevReview" aria-label="Depoimento anterior"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+            <button type="button" id="nextReview" aria-label="Próximo depoimento"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+          </div>
+
+        </div>
       </div>
     </div>
-
-    
-
-    </div>
-
-
-      <div class="review-card">
-        <img src="./assets/icon/MariaSouzaPic.png" class="review-img">
-        <p>"Experiência incrível, viagem perfeita!"</p>
-        <span>- Maria Souza</span>
-      </div>
-
-      <div class="review-card">
-        <img src="./assets/icon/CarlosLimaPic.png" class="review-img">
-        <p>"Preço justo e suporte ótimo."</p>
-        <span>- Carlos Lima</span>
-        <span class="location"></span>
-      </div>
-    </div>
-
-   
-
-      </div>
-  </div>
- </div>
-
-    <!-- setas -->
-  
-
-
-</div>
   </div>
 </section>
 
-<div class="newsletter" id="contatos">
+<section class="newsletter" id="contatos" aria-labelledby="titulo-newsletter">
   <div class="container" data-aos="fade-up-right">
- <img src="./assets/icon/AVIÃO.svg" class="aviao" alt="avião">
+    <img src="./assets/icon/AVIÃO.svg" class="aviao" alt="" loading="lazy">
 
-<h2>Assine e receba promoções incríveis!</h2>
+    <h2 id="titulo-newsletter">Assine e receba promoções incríveis!</h2>
 
     <p>Fique por dentro das melhores promoções e oportunidades de viagem antes de todo mundo. Ao se inscrever na nossa newsletter, você recebe ofertas exclusivas, descontos especiais e sugestões de destinos incríveis para sua próxima aventura. Viajar bem começa com informação — e aqui você sempre estará um passo à frente.</p>
 
-<form>
-  <div class="newsletter-form" data-aos="fade-up-left">
-<input type="email" placeholder="Seu email">
-<button>Assinar</button>
-</form>
-  </div><!--div do container-->
+    <form class="newsletter-form" id="form-newsletter" data-aos="fade-up-left" novalidate>
+      <input type="email" id="newsletter-email" name="email" placeholder="Seu e-mail" aria-label="Seu e-mail" autocomplete="email" required>
+      <button type="submit">Assinar</button>
+    </form>
+    <p class="newsletter-msg" id="newsletter-msg" role="status" aria-live="polite"></p>
   </div>
 </section>
 </main>
@@ -358,22 +343,22 @@
       
        <!-- coluna 1 -->
       <div>
-      <h2>Nossa logo</h2>
+      <h2>Brasil GO</h2>
       <p>
         Viajar pelo Brasil nunca foi tão fácil. A Brasil GO nasceu para simplificar sua jornada, conectando você a destinos incríveis com tecnologia, segurança e uma experiência totalmente personalizada.
       </p>
 
       <div class="social" data-aos="fade-up">
 
-        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
     <i class="fa-brands fa-facebook-f"></i>
   </a>
 
- <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+ <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
     <i class="fa-brands fa-tiktok"></i>
   </a>
 
-  <a href="https://x.com" target="_blank" aria-label="X">
+  <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X">
     <i class="fa-brands fa-x-twitter"></i>
   </a>
 
@@ -420,12 +405,11 @@
 </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            once: true,
+            disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        });
     </script>
-
-
-
-
- <script src="./js/feed.js"></script>
+    <script src="./js/feed.js"></script>
 </body>
 </html>

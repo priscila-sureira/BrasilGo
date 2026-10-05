@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/perfil.css">
-    <title>Perfil</title>
+    <title>Meu perfil | Brasil GO</title>
 </head>
 <body>
   <div class="background"></div>
@@ -23,56 +23,33 @@
     </div>
     </div>
   
-    <form class="form-cadastro">
+    <form class="form-cadastro" id="form-perfil" method="post">
         <h2 class="titulo-dados">Dados Cadastrais</h2>
         <div class="form-container">
             <div class="coluna-esquerda">
-            <input type="text"
-            id="nome"
-            name="nome"
-            placeholder="Nome Completo"
-            required>
+            <input type="text" id="nome" name="nome" placeholder="Nome Completo" aria-label="Nome completo" autocomplete="name" required>
 
-            <input type="text"
-            id="Data Nascimento"
-            name="Data Nascimento"
-            placeholder="Data de nascimento"
-            required> 
+            <input type="text" id="nascimento" name="nascimento" placeholder="Data de nascimento" aria-label="Data de nascimento" inputmode="numeric" autocomplete="bday" required> 
 
-            <input type="text"
-            id="Email"
-            name="Email"
-            placeholder="Email"
-            required>
+            <input type="email" id="email" name="email" placeholder="Email" aria-label="E-mail" autocomplete="email" required>
             </div>
 
             <div class="coluna-direita">
-            <input type="text"
-            id="CPF"
-            name="CPF"
-            placeholder="CPF"
-            required>
+            <input type="text" id="cpf" name="cpf" placeholder="CPF" aria-label="CPF" inputmode="numeric" autocomplete="off" required>
 
-            <input type="text"
-            id="Telefone"
-            name="Telefone"
-            placeholder="Telefone"
-            required>
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone" aria-label="Telefone" autocomplete="tel" required>
 
-            <input type="text"
-            id="Senha"
-            name="Senha"
-            placeholder="Senha"
-            required>
+            <input type="password" id="senha" name="senha" placeholder="Senha" aria-label="Senha" autocomplete="new-password" required>
         </div>
         
         <div class="caixa-botão">
         <button class="bnt-salvar" type="submit">Salvar as Alterações</button>
+        <p id="perfil-status" role="status"></p>
         </div>
         
         </div>
     </form>
-    </div>
-    </div>
+
+    <script src="./js/perfil.js"></script>
 </body>
 </html>
