@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Volkhov', sans-serif;
+    font-family: 'Volkhov', serif;
     text-decoration: none;
 }
 
@@ -125,7 +125,6 @@ body{
 .hero{
     position: relative;
     padding-top: 100px;
-    margin-top: 100;
    
     min-height: 100vh;
     background-position:center;
@@ -498,10 +497,6 @@ overflow: hidden;
   background: linear-gradient(to left, #f5f5f5, transparent);
 }
 
-.destinos p {
-font-weight: 36px;
-}
-
 .card-container{
     display:flex;
     gap: 25px;
@@ -533,7 +528,6 @@ font-weight: 36px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-width: 250px; /*garante que os cards não fiquem muito pequenos*/
     flex: 0 0 auto; /*impede que os cards encolham ou cresçam*/
-    transform: center;
 }
 
 .card:hover {
@@ -587,7 +581,7 @@ font-weight: 36px;
 
 
 
-.top-section h4 {
+.top-section h3 {
     font-size: 18px;
     margin: 0;
     font-weight: 600;
@@ -632,12 +626,11 @@ font-weight: 36px;
     color:white;
     border-radius:20px;
     cursor:pointer;
-     transition: 1.3s;
+     transition: background 0.3s;
 }
 
-.button:hover {
+.card button:hover {
     background: #ff4da6;
-    transition: 0.3s;
 }
 
 .depoimentos {
@@ -647,14 +640,9 @@ font-weight: 36px;
   gap: 20px;
 }
 
-.depoimentos h1{
+.depoimentos h2{
     font-family:'Volkhov', serif;
     font-size: 51px;
-}
-
-.depoimentos h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
 }
 
 .depoimentos p {
@@ -662,20 +650,12 @@ font-weight: 36px;
 }
 
 .avaliacao {
-   flex: 1;
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   gap: 20px;
- width: 100%;
-  gap: 20px;
-  justify-content: flex-end; /* joga pro lado direito */
-  
-  height: 180px;
-
-  overflow: hidden;
-
-  scroll-behavior: smooth;
+  flex: 1;
+  display: grid;                 /* cards empilhados na mesma célula */
+  align-items: center;
+  justify-content: flex-end;     /* joga pro lado direito */
+  width: 100%;
+  position: relative;            /* ancora as setas */
 }
 
 .review-wrapper{
@@ -685,7 +665,6 @@ font-weight: 36px;
 }
 
 .reviews {
-  padding: 60%px;
   margin-top: 100px;
   justify-content: space-between;
   align-items: center;
@@ -722,14 +701,16 @@ font-weight: 36px;
    overflow: visible;
   max-width: 350px;
    opacity: 0;
+  visibility: hidden;
+  grid-area: 1 / 1;
   transform: translateX(100px);
-  transition: all 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 }
 
 .review-card.active {
   opacity: 1;
+  visibility: visible;
   transform: translateX(0);
- 
 }
 
 .review-card p {
@@ -743,17 +724,6 @@ font-weight: 36px;
 }
 
 
-.review-card:nth-child(2) {
-  transform: translateX(25px) scale(0.97);
-  opacity: 0.6;
-  z-index: 2;
-}
-
-.review-card:nth-child(3) {
-  transform: translateX(50px) scale(0.94);
-  opacity: 0.3;
-  z-index: 1;
-}
 
 
 
@@ -774,8 +744,9 @@ font-weight: 36px;
   height: 40px;
 
   background: rgb(148, 148, 148);
+  color: #fff;
   border: none;
-  padding: 10px;
+  padding: 0;
   border-radius: 50%;
   cursor: pointer;
    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -850,6 +821,12 @@ font-weight: 36px;
   transform: rotate(-5deg);
    pointer-events: none;
     z-index: 1;
+}
+
+.newsletter-msg {
+  min-height: 1.5em;
+  margin-top: 8px;
+  font-size: 14px;
 }
 
 .newsletter-container{
@@ -1181,11 +1158,93 @@ font-weight: 36px;
     min-width: 200px;
   }
 
-  .depoimentos h1 {
+  .depoimentos h2 {
     font-size: 28px;
   }
 
   .footer {
     text-align: center;
+  }
+}
+
+/* ==========================================================================
+   AJUSTES DA REVISÃO
+   ========================================================================== */
+
+/* Barra de busca: labels e input de data com o mesmo visual do select */
+.config label { display: block; }
+
+.config input[type="date"] {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Botão "Explorar destinos" (antes animado com GSAP, agora só CSS) */
+.btn-primary { text-decoration: none; transition: transform 0.3s ease; }
+.btn-primary:hover { transform: scale(1.1); }
+
+/* Entrada do menu (antes feita via JS que nunca tinha efeito) */
+@keyframes menu-entrada {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.menu a { animation: menu-entrada 0.4s ease both; }
+.menu a:nth-child(1) { animation-delay: 0.1s; }
+.menu a:nth-child(2) { animation-delay: 0.2s; }
+.menu a:nth-child(3) { animation-delay: 0.3s; }
+.menu a:nth-child(4) { animation-delay: 0.4s; }
+
+/* Botão hambúrguer: só aparece no mobile */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #1a1a1a;
+  font-size: 1.6em;
+  line-height: 1;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+
+  .menu.aberto {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    gap: 0;
+    padding: 10px 0;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu.aberto a { padding: 14px 0; margin: 0; }
+}
+
+/* Foco visível para navegação por teclado (vários componentes tinham outline: none) */
+a:focus-visible,
+button:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 2px solid #6c2bd9;
+  outline-offset: 2px;
+}
+
+/* Respeita quem prefere menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url('/assets/images/image.png');
+  background-image: url('../../../assets/images/image.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -72,6 +72,11 @@ body {
 }
 
 .botaodois {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 2px solid #f72585;
   width: 375px;
   height: 43px;
   background-color: #f72585;

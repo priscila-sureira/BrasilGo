@@ -345,3 +345,20 @@ footer {
     gap: 20px;
   }
 }
+
+/* Filtro de busca e estado vazio */
+.card[hidden] { display: none; }
+
+.sem-resultados {
+  text-align: center;
+  margin-top: 24px;
+}
+
+/* Foco visível */
+.card:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #6c2bd9;
+  outline-offset: 2px;
+}

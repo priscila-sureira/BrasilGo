@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url('/assets/images/image.png');
+  background-image: url('../../../assets/images/image.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -187,4 +187,12 @@ body {
     max-width: 375px;
   }
 
+}
+/* "Primeiro acesso" agora é um link (navega para o cadastro) */
+a.botao-acesso {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 2px solid #f72585;
 }
